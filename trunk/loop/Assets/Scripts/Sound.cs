@@ -7,6 +7,7 @@ public class Sound : MonoBehaviour {
 	/*Liste des audio clips*/
 	public List<AudioClip> audioClips = new List<AudioClip>();
 	public AudioClip audioClip1;
+
 	//public AudioClip audioClip2;
 	//public AudioClip audioClip3;
 
@@ -16,8 +17,9 @@ public class Sound : MonoBehaviour {
 	public int weight;
 
 	public Sound() {
+		Debug.Log ("création objet Sound");
 				
-		audioClips.Add (audioClip1);
+		this.audioClips.Add(audioClip1);
 		//audioClips.Add (audioClip2);
 		//audioClips.Add (audioClip3);
 
@@ -26,5 +28,6 @@ public class Sound : MonoBehaviour {
 	public AudioClip getAudioClip(int numeroSon) {
 		return audioClips[numeroSon];
 	}
+
 
 }

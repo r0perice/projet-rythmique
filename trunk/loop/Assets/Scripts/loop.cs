@@ -2,35 +2,15 @@
 using System.Collections.Generic;
 using System;
 
-public delegate void LoopEvent(loop loop);
+public delegate void LoopEvent(Loop loop);
 
-public class loop : MonoBehaviour {
+public class Loop : MonoBehaviour {
 	
 	private float timeDown = 0.0f; 
 	private bool running = true;
-	private List<Tuple<float,AudioClip>> liste = new List<Tuple<float,AudioClip>>();
-	private Sound sound1 = new Sound();
+	private List<FakeTuple> liste = new List<FakeTuple> ();
 	private int dureeBoucle= 10;
 
-	public class Tuple<T,U>
-	{
-		public T Item1 { get; private set; }
-		public U Item2 { get; private set; }
-		
-		public Tuple(T item1, U item2)
-		{
-			Item1 = item1;
-			Item2 = item2;
-		}
-	}
-	
-	public static class Tuple
-	{
-		public static Tuple<T, U> Create<T, U>(T item1, U item2)
-		{
-			return new Tuple<T, U>(item1, item2);
-		}
-	}
 
 	// Use this for initialization
 	void Start () {
@@ -64,18 +44,17 @@ public class loop : MonoBehaviour {
 	
 	void OnGUI(){
 		if (Event.current.Equals(Event.KeyboardEvent("a"))) {
+			//var sound1 = new GameObject();
+			//sound1.AddComponent<Sound>();
 			Debug.Log ("The A key was pressed");
-			Tuple<float,AudioClip> couple = new Tuple<float,AudioClip>(timeDown,sound1.getAudioClip(0));
-			liste.Add(couple);
-			Debug.Log(sound1.getAudioClip(0).name);
-			//liSound.Add(sound1.getAudioClip(0));
-			//liFloat.Add(timeDown);
+			//Debug.Log(sound1.getAudioClip(0));
+			//FakeTuple listeA = new FakeTuple(timeDown,sound1.GetComponent().getAudioClip(0));
+			liste.Add(listeA);
 		}	
 
 		if (Event.current.Equals (Event.KeyboardEvent ("z"))) {
 			Debug.Log ("The Z key was pressed");
-			Debug.Log (liste[0].Item1);
-			Debug.Log (liste[0].Item2);
+			Debug.Log(liste[0].getAudio());
 		}
 	
 	}
