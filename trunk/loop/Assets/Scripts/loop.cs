@@ -1,62 +1,109 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+using UnityEngine;
 using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 
-public delegate void LoopEvent(Loop loop);
-
-public class Loop : MonoBehaviour {
-	
+public class Loop : MonoBehaviour
+{
+	private Sound s;
 	private float timeDown = 0.0f; 
 	private bool running = true;
-	private List<FakeTuple> liste = new List<FakeTuple> ();
-	private int dureeBoucle= 10;
 
+	private int i=0;
+	public List<Sound> sound = new List<Sound>();
+	public int dureeBoucle;
 
-	// Use this for initialization
-	void Start () {
+	void Start()
+	{
 		Debug.Log ("Running...");
 		if (!running)
 			return;
+
+		s = GetComponent<Sound>();
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
 
-	//	while (i<=liSound.Count) {
-		//
-	//		i++;
-	//	}
-
-
-		//mesure le temps
+	void Update()
+	{
 
 		timeDown += Time.deltaTime;
-		//Debug.Log ("time" + timeDown);
+		getInput ();
 
 		if (timeDown >= dureeBoucle) {
-			timeDown=0.0f;
+		timeDown = 0.0f;
+	    }
+
+		playSound ();
+
+	}
+
+	void getInput()
+	{
+		if (Input.GetKeyDown ("q")) 
+		{
+			Debug.Log ("The Q key was pressed");
+			i = 0;
+			AddSound();
 		}
-	}
-
-	private void MakeSound(AudioClip originalClip){
-		AudioSource.PlayClipAtPoint(originalClip, transform.position);
-	}
-	
-	void OnGUI(){
-		if (Event.current.Equals(Event.KeyboardEvent("a"))) {
-			//var sound1 = new GameObject();
-			//sound1.AddComponent<Sound>();
-			Debug.Log ("The A key was pressed");
-			//Debug.Log(sound1.getAudioClip(0));
-			//FakeTuple listeA = new FakeTuple(timeDown,sound1.GetComponent().getAudioClip(0));
-			liste.Add(listeA);
-		}	
-
-		if (Event.current.Equals (Event.KeyboardEvent ("z"))) {
+		
+		if (Input.GetKeyDown ("s")) 
+		{
+			Debug.Log ("The S key was pressed");
+			i = 1;
+			AddSound();
+		}
+		
+		if (Input.GetKeyDown ("d")) 
+		{
+			Debug.Log ("The D key was pressed");
+			i = 2;
+			AddSound();
+		}
+		
+		if (Input.GetKeyDown ("z"))
+		{
 			Debug.Log ("The Z key was pressed");
-			Debug.Log(liste[0].getAudio());
+			var result = 	from so in sound
+				orderby so.time ascending
+					select so;
+			
+			foreach (var so in result)
+				Debug.Log (String.Format("timeDown : {0} / clip : {1}",so.time,so.clip));
+			
 		}
-	
+		
+		if (Input.GetKeyDown ("a"))
+		{
+			Debug.Log ("The A key was pressed");
+			Debug.Log (String.Format("sound.time : {0} ",sound[0].time));
+			
+		}
+		
+		if (Input.GetKeyDown ("e"))
+		{
+			Debug.Log ("The E key was pressed");
+			Debug.Log (timeDown);
+			
+		}
 	}
+	void AddSound()
+	{
+		//Sound(AudioClip[] newClip, float newTime, int newWeight, string newName)
+		sound.Add(new Sound(s.clips[i],timeDown,0,s.clips[i].name));
+	}
+
+	void playSound(){
+		foreach (Sound son in sound)
+		{
+			if (Math.Abs(son.time-timeDown)<=0.02f)
+			{
+				GetComponent<AudioSource>().clip = son.clip;
+				GetComponent<AudioSource>().Play();
+			}
+		}
+	}
+
+
 
 }
+	
