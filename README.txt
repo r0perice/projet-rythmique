@@ -1,6 +1,6 @@
 /******************/
-/*** BRANCH-0.2 ***/
-/** CH BIGEARD **/
+/*** TRUNK-0.1 ***/
 /******************/
 
-Animations
+- LOOP : Boucle dans laquelle on peut ajouter des sons à lire
+- SOUND : Chaque son poss\'e8de un audioClip, un temps, un poids ...
