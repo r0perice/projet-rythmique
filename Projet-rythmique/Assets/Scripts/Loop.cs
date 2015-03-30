@@ -16,7 +16,7 @@ public class Loop : MonoBehaviour
 
 	void Start()
 	{
-		Debug.Log ("Running...");
+		//Debug.Log ("Running...");
 		if (!running)
 			return;
 
@@ -30,7 +30,9 @@ public class Loop : MonoBehaviour
 		getInput ();
 
 		if (timeDown >= dureeBoucle) {
-		timeDown = 0.0f;
+			timeDown = 0.0f;
+			trierSon();
+			ajusterSon();
 	    }
 
 		playSound ();
@@ -41,54 +43,42 @@ public class Loop : MonoBehaviour
 	{
 		if (Input.GetKeyDown ("q")) 
 		{
-			Debug.Log ("The Q key was pressed");
+			//Debug.Log ("The Q key was pressed");
 			i = 0;
 			AddSound();
 		}
 		
 		if (Input.GetKeyDown ("s")) 
 		{
-			Debug.Log ("The S key was pressed");
+			//Debug.Log ("The S key was pressed");
 			i = 1;
 			AddSound();
 		}
 		
 		if (Input.GetKeyDown ("d")) 
 		{
-			Debug.Log ("The D key was pressed");
+			//Debug.Log ("The D key was pressed");
 			i = 2;
 			AddSound();
 		}
-		
-		if (Input.GetKeyDown ("z"))
-		{
-			Debug.Log ("The Z key was pressed");
-			var result = 	from so in sound
-				orderby so.time ascending
-					select so;
-			
-			foreach (var so in result)
-				Debug.Log (String.Format("timeDown : {0} / clip : {1}",so.time,so.clip));
-			
-		}
+
 		
 		if (Input.GetKeyDown ("a"))
 		{
-			Debug.Log ("The A key was pressed");
-			Debug.Log (String.Format("sound.time : {0} ",sound[0].time));
+			//Debug.Log ("The A key was pressed");
+			//Debug.Log (String.Format("sound.time : {0} ",sound[0].time));
 			
 		}
 		
 		if (Input.GetKeyDown ("e"))
 		{
-			Debug.Log ("The E key was pressed");
-			Debug.Log (timeDown);
+			//Debug.Log ("The E key was pressed");
+			//Debug.Log (timeDown);
 			
 		}
 	}
 	void AddSound()
 	{
-		//Sound(AudioClip[] newClip, float newTime, int newWeight, string newName)
 		sound.Add(new Sound(s.clips[i],timeDown,0,s.clips[i].name));
 	}
 
@@ -103,7 +93,39 @@ public class Loop : MonoBehaviour
 		}
 	}
 
+	void ajusterSon() {
+		for (int i =0;i<sound.Count();i++)
+		{
+			if (i!=sound.Count()-1 && (Math.Abs(sound[i].time-sound[i+1].time))<=0.5f) 
+			{
+				
+				sound[i].weight+=1;
+				Debug.Log(sound[i].weight);
 
+				if (sound[i].weight>=3) 
+				{
+					foreach (Sound son in sound) 
+					{
+						if (son!=sound[i] && (Math.Abs(son.time-sound[i].time))<=1.0f)
+						{
+							//sound.Remove(sound[i]);
+							Debug.Log(Math.Abs(son.time-sound[i].time));
+						}
+					}
+				}
+			}
+		}
 
+	}
+
+	void trierSon() {
+		var result = from so in sound
+			orderby so.time ascending
+				select so;
+		
+		foreach (var so in result) {
+			//Debug.Log (String.Format("timeDown : {0} / clip : {1}",so.time,so.clip));
+		}
+	}
 }
 	
