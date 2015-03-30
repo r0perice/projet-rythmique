@@ -7,6 +7,9 @@ using System.Collections.Generic;
 public class Loop : MonoBehaviour
 {
 	private Sound s;
+	public GameObject[] cubes;
+	public GameObject cube;
+	public Animation a;
 	private float timeDown = 0.0f; 
 	private bool running = true;
 
@@ -20,7 +23,8 @@ public class Loop : MonoBehaviour
 		if (!running)
 			return;
 
-		s = GetComponent<Sound>();
+		a = cube.gameObject.GetComponent<Animation> ();
+		s = GetComponent<Sound> ();
 	}
 
 	void Update()
@@ -33,7 +37,8 @@ public class Loop : MonoBehaviour
 		timeDown = 0.0f;
 	    }
 
-		playSound ();
+		//playSound ();
+		playSoundAndAnimation ();
 
 	}
 
@@ -44,6 +49,8 @@ public class Loop : MonoBehaviour
 			Debug.Log ("The Q key was pressed");
 			i = 0;
 			AddSound();
+
+
 		}
 		
 		if (Input.GetKeyDown ("s")) 
@@ -83,22 +90,35 @@ public class Loop : MonoBehaviour
 		{
 			Debug.Log ("The E key was pressed");
 			Debug.Log (timeDown);
-			
+
 		}
 	}
+
 	void AddSound()
 	{
-		//Sound(AudioClip[] newClip, float newTime, int newWeight, string newName)
-		sound.Add(new Sound(s.clips[i],timeDown,0,s.clips[i].name));
+		//Sound(AudioClip[] newClip, float newTime, int newWeight, string newName, Animation newAnim)
+		sound.Add(new Sound(s.clips[i],timeDown,0,s.clips[i].name,i));
 	}
 
-	void playSound(){
-		foreach (Sound son in sound)
-		{
-			if (Math.Abs(son.time-timeDown)<=0.02f)
+	void playSound()
+	{
+		foreach (Sound son in sound) {
+			if (Math.Abs (son.time - timeDown) <= 0.02f) 
 			{
-				GetComponent<AudioSource>().clip = son.clip;
-				GetComponent<AudioSource>().Play();
+				GetComponent<AudioSource> ().clip = son.clip;
+				GetComponent<AudioSource> ().Play ();
+			}
+		}
+	}
+
+	void playSoundAndAnimation()
+	{
+		foreach (Sound son in sound) {
+			if (Math.Abs (son.time - timeDown) <= 0.02f) 
+			{
+				GetComponent<AudioSource> ().clip = son.clip;
+				GetComponent<AudioSource> ().Play ();
+				a.PlayAnimation(son.anim);
 			}
 		}
 	}
