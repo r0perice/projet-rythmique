@@ -32,7 +32,7 @@ public class Loop : MonoBehaviour
 		if (timeDown >= dureeBoucle) {
 			timeDown = 0.0f;
 			trierSon();
-			ajusterSon();
+			ajusterSon(1.0f);
 	    }
 
 		playSound ();
@@ -43,43 +43,34 @@ public class Loop : MonoBehaviour
 	{
 		if (Input.GetKeyDown ("q")) 
 		{
-			//Debug.Log ("The Q key was pressed");
 			i = 0;
-			AddSound();
+			AddSound(0);
+		}
+
+		if (Input.GetKeyDown ("a")) 
+		{
+			Debug.Log ("a");
+			i = 0;
+			AddSound(1);
 		}
 		
 		if (Input.GetKeyDown ("s")) 
 		{
-			//Debug.Log ("The S key was pressed");
 			i = 1;
-			AddSound();
+			AddSound(0);
 		}
 		
 		if (Input.GetKeyDown ("d")) 
 		{
-			//Debug.Log ("The D key was pressed");
 			i = 2;
-			AddSound();
-		}
-
-		
-		if (Input.GetKeyDown ("a"))
-		{
-			//Debug.Log ("The A key was pressed");
-			//Debug.Log (String.Format("sound.time : {0} ",sound[0].time));
-			
-		}
-		
-		if (Input.GetKeyDown ("e"))
-		{
-			//Debug.Log ("The E key was pressed");
-			//Debug.Log (timeDown);
-			
+			AddSound(0);
 		}
 	}
-	void AddSound()
+	void AddSound(int _weight)
 	{
-		sound.Add(new Sound(s.clips[i],timeDown,0,s.clips[i].name));
+		Sound son = new Sound (s.clips [i], timeDown, 0, s.clips [i].name);
+		son.weight = _weight;
+		sound.Add(son);
 	}
 
 	void playSound(){
@@ -93,29 +84,21 @@ public class Loop : MonoBehaviour
 		}
 	}
 
-	void ajusterSon() {
-		for (int i =0;i<sound.Count();i++)
+	void ajusterSon(float marge) 
+	{
+		for (int i =0; i<sound.Count(); i++) 
 		{
-			if (i!=sound.Count()-1 && (Math.Abs(sound[i].time-sound[i+1].time))<=0.5f) 
+			if (sound[i].weight==1)
 			{
-				
-				sound[i].weight+=1;
-				Debug.Log(sound[i].weight);
-
-				if (sound[i].weight>=3) 
+				for (int j =0; j<sound.Count(); j++) 
 				{
-					foreach (Sound son in sound) 
+					if((Math.Abs(sound[j].time-sound[i].time))<=marge && sound[j].weight==0) 
 					{
-						if (son!=sound[i] && (Math.Abs(son.time-sound[i].time))<=1.0f)
-						{
-							//sound.Remove(sound[i]);
-							Debug.Log(Math.Abs(son.time-sound[i].time));
-						}
+						sound.Remove(sound[j]);
 					}
 				}
 			}
 		}
-
 	}
 
 	void trierSon() {
