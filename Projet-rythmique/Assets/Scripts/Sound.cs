@@ -11,14 +11,14 @@ public class Sound : MonoBehaviour {
 	public float time { get; set; }
 	public int weight;
 	private string title;
+	public int anim;
 
-	public Sound(AudioClip newClip, float newTime, int newWeight, string newTitle) 
+	public Sound(AudioClip newClip, float newTime, int newWeight, string newTitle, int newAnim) 
 	{
 		clip = newClip;
 		time = newTime;
 		weight = newWeight;
 		title = newTitle;
+		anim = newAnim;
 	}
-
-
 }
