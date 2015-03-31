@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Loop.cs">
     <Files>
-      <File FileName="Assets/Scripts/Loop.cs" Line="110" Column="8" />
-      <File FileName="Assets/Scripts/Sound.cs" Line="12" Column="8" />
+      <File FileName="Assets/Scripts/Loop.cs" Line="95" Column="77" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
