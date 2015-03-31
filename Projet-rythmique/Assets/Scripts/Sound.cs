@@ -9,7 +9,7 @@ public class Sound : MonoBehaviour {
 	public AudioClip[] clips;
 	public AudioClip clip;
 	public float time { get; set; }
-	private int weight;
+	public int weight;
 	private string title;
 	public int anim;
 
