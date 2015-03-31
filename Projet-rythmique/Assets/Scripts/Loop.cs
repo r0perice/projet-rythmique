@@ -7,9 +7,6 @@ using System.Collections.Generic;
 public class Loop : MonoBehaviour
 {
 	private Sound s;
-	public GameObject[] cubes;
-	public GameObject cube;
-	public Animation a;
 	private float timeDown = 0.0f; 
 	private bool running = true;
 
@@ -23,8 +20,7 @@ public class Loop : MonoBehaviour
 		if (!running)
 			return;
 
-		a = cube.gameObject.GetComponent<Animation> ();
-		s = GetComponent<Sound> ();
+		s = GetComponent<Sound>();
 	}
 
 	void Update()
@@ -39,8 +35,7 @@ public class Loop : MonoBehaviour
 			ajusterSon(1.0f);
 	    }
 
-		//playSound ();
-		playSoundAndAnimation ();
+		playSound ();
 
 	}
 
@@ -49,7 +44,6 @@ public class Loop : MonoBehaviour
 		if (Input.GetKeyDown ("q")) 
 		{
 			i = 0;
-<<<<<<< HEAD
 			AddSound(0);
 		}
 
@@ -58,11 +52,6 @@ public class Loop : MonoBehaviour
 			Debug.Log ("a");
 			i = 0;
 			AddSound(1);
-=======
-			AddSound();
-
-
->>>>>>> trunk-0.2
 		}
 		
 		if (Input.GetKeyDown ("s")) 
@@ -74,7 +63,6 @@ public class Loop : MonoBehaviour
 		if (Input.GetKeyDown ("d")) 
 		{
 			i = 2;
-<<<<<<< HEAD
 			AddSound(0);
 		}
 	}
@@ -83,63 +71,15 @@ public class Loop : MonoBehaviour
 		Sound son = new Sound (s.clips [i], timeDown, 0, s.clips [i].name);
 		son.weight = _weight;
 		sound.Add(son);
-=======
-			AddSound();
-		}
-		
-		if (Input.GetKeyDown ("z"))
-		{
-			Debug.Log ("The Z key was pressed");
-			var result = 	from so in sound
-				orderby so.time ascending
-					select so;
-			
-			foreach (var so in result)
-				Debug.Log (String.Format("timeDown : {0} / clip : {1}",so.time,so.clip));
-			
-		}
-		
-		if (Input.GetKeyDown ("a"))
-		{
-			Debug.Log ("The A key was pressed");
-			Debug.Log (String.Format("sound.time : {0} ",sound[0].time));
-			
-		}
-		
-		if (Input.GetKeyDown ("e"))
-		{
-			Debug.Log ("The E key was pressed");
-			Debug.Log (timeDown);
-
-		}
 	}
 
-	void AddSound()
-	{
-		//Sound(AudioClip[] newClip, float newTime, int newWeight, string newName, Animation newAnim)
-		sound.Add(new Sound(s.clips[i],timeDown,0,s.clips[i].name,i));
->>>>>>> trunk-0.2
-	}
-
-	void playSound()
-	{
-		foreach (Sound son in sound) {
-			if (Math.Abs (son.time - timeDown) <= 0.02f) 
+	void playSound(){
+		foreach (Sound son in sound)
+		{
+			if (Math.Abs(son.time-timeDown)<=0.02f)
 			{
-				GetComponent<AudioSource> ().clip = son.clip;
-				GetComponent<AudioSource> ().Play ();
-			}
-		}
-	}
-
-	void playSoundAndAnimation()
-	{
-		foreach (Sound son in sound) {
-			if (Math.Abs (son.time - timeDown) <= 0.02f) 
-			{
-				GetComponent<AudioSource> ().clip = son.clip;
-				GetComponent<AudioSource> ().Play ();
-				a.PlayAnimation(son.anim);
+				GetComponent<AudioSource>().clip = son.clip;
+				GetComponent<AudioSource>().Play();
 			}
 		}
 	}
