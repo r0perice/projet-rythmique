@@ -1,5 +1,5 @@
 /******************/
-/*** TRUNK-1.2 ***/
+/*** TRUNK-1.3 ***/
 /******************/
 
 - Ajuster le son à l'appuie d'une touche
