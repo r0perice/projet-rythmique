@@ -1,8 +1,17 @@
 /******************/
-/*** TRUNK-1.3 ***/
+/*** TRUNK-2.2 ***/
 /******************/
 
-- Ajuster le son à l'appuie d'une touche
-- Modification du deltaTime par le temps Unity
-- Rendre la classe Loop généralisation (pouvoir créer facilement des instances)
-- Représentation graphique des boucles et des sons
+## DONE ##
+
+TK-32 : Ajouter un métronome
+
+## IN PROGRESS ##
+
+TK-28 : Ajustement uniquement sur le même son
+TK-33 : Ajouter un son avec un bouton de la wiimote
+
+
+## REFONTE DU CODE ##
+
+Séparation de la classe « Music » et de la partie graphique, maintenant disponible dans la classe « Animation ».
