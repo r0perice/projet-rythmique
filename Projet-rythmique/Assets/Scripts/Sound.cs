@@ -9,15 +9,12 @@ public class Sound : MonoBehaviour {
 	private AudioClip clip;
 	private float time; //Duree du son
 	private string title; //Nom du son
-	private int animation; //Animation
 
-	public Sound(AudioClip newClip, float newTime, string newTitle, int newAnim) 
+	public Sound(AudioClip newClip, float newTime, string newTitle) 
 	{
 		clip = newClip;
 		time = newTime;
 		title = newTitle;
-		animation = newAnim;
-		title = newClip.name;
 
 	}
 
@@ -48,12 +45,9 @@ public class Sound : MonoBehaviour {
 		}
 	}
 
-	public int Animation {
+	public AudioClip[] Clips {
 		get {
-			return animation;
-		}
-		set {
-			animation = value;
+			return clips;
 		}
 	}
 }
