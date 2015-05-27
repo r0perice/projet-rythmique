@@ -1,6 +1,6 @@
 # TRUNK-2.2 
 
-## SCRUMS
+## SCRUM
 
 
 ### DONE
