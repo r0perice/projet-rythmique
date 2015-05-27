@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class Loop : MonoBehaviour
 {
-	private Sound sound;
+	//private Sound sound;
 	public Animation anim;
 
 	private float adjustedTime = 0.0f;
@@ -15,25 +15,25 @@ public class Loop : MonoBehaviour
 	private float ratio;
 	private int clipNumber;
 	private int loopDuration;
-	private double accuracy;
+	private double accuracy = 5.0f;
 	
 	public List<Sound> sounds = new List<Sound>();
 	
 	public void Initialize()
 	{
 		ratio = Time.fixedDeltaTime / 0.02f;
-		sound = GetComponent<Sound> ();
+		//sound = GetComponent<Sound> ();
 
 	}
 	
-	public void AddSound(float lt=-1)
+	public void AddSound(int clipNumber, float lt=-1)
 	{
 		GameObject go = GameObject.Find("Main Camera");
 		Sound other = (Sound) go.GetComponent(typeof(Sound));
 
 		if (lt == -1) {
 			Sound son = new Sound (other.Clips [clipNumber], loopTime, other.Clips [clipNumber].name);
-			adjustSound (son, 0.025f);
+			adjustSound (son, 0.25f);
 		
 		} else {
 			Sound son = new Sound (other.Clips [clipNumber], lt, other.Clips [clipNumber].name);
@@ -79,6 +79,7 @@ public class Loop : MonoBehaviour
 		} else {
 			adjustedTime = loopTime;
 		}
+
 	}
 
 	// Centre la camera

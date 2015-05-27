@@ -24,8 +24,7 @@ public class Music : MonoBehaviour {
 	public float positionZ;
 
 	// Field Of View
-	private float fov;
-	private float fovGap = 1.0f;// Variable pour le fov
+	private float fov = 2.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -38,7 +37,6 @@ public class Music : MonoBehaviour {
 		anim.drawLine (positionX,positionY,positionZ); // barre rouge
 
 		// Initialisation camera
-		fov = anim.Size + fovGap;
 		Camera.main.transform.Translate(new Vector3(positionX-fov,positionY,positionZ));
 		Camera.main.transform.Rotate(new Vector3(0f,90f,270f));
 
@@ -77,22 +75,19 @@ public class Music : MonoBehaviour {
 
 		if (Input.GetKeyDown ("q")) 
 		{
-			loops[loopSelected].ClipNumber = 0;
-			loops[loopSelected].AddSound();
+			loops[loopSelected].AddSound(0);
 			anim.drawSphere("black",loopSelected,positionX,positionY,positionZ);
 		}
 
 		if (Input.GetKeyDown ("s")) 
 		{
-			loops[loopSelected].ClipNumber = 1;
-			loops[loopSelected].AddSound();
+			loops[loopSelected].AddSound(1);
 			anim.drawSphere("blue",loopSelected,positionX,positionY,positionZ);
 		}
 		
 		if (Input.GetKeyDown ("d")) 
 		{
-			loops[loopSelected].ClipNumber = 2;
-			loops[loopSelected].AddSound();
+			loops[loopSelected].AddSound(2);
 			anim.drawSphere("green",loopSelected,positionX,positionY,positionZ);
 		}
 
@@ -108,13 +103,12 @@ public class Music : MonoBehaviour {
 				anim.drawCylinder(loopNumber,positionX,positionY,positionZ);
 				GameObject go = (GameObject)anim.Cylinders[loopNumber];
 				go.AddComponent<Loop>();
-				go.AddComponent<Sound>();
+				//go.AddComponent<Sound>();
 				go.AddComponent<AudioSource>();
 
 				Loop cc = (Loop) go.GetComponent<Loop>();
 				cc.Initialize ();
 				cc.LoopDuration = durationTime;
-				cc.Accuracy = 5.0f;
 		
 				if (loopNumber != 0){
 					//loop.cameraMove();
@@ -139,6 +133,7 @@ public class Music : MonoBehaviour {
 				loopSelected++;
 			}
 			anim.makeYellow(anim.Cylinders[loopSelected]);
+			anim.Size = loops[loopSelected].LoopDuration; // remet les sphères au bon niveau
 		}
 
 		if (Input.GetKeyDown (KeyCode.DownArrow)) 
@@ -148,6 +143,8 @@ public class Music : MonoBehaviour {
 				loopSelected--;
 			}
 			anim.makeYellow(anim.Cylinders[loopSelected]);
+			anim.Size = loops[loopSelected].LoopDuration; // remet les sphères au bon niveau
+
 		}
 	}
 
@@ -170,10 +167,10 @@ public class Music : MonoBehaviour {
 
 		loops[0].ClipNumber = 0;
 		
-		loops[0].AddSound(0.0f);
-		loops[0].AddSound (1.25f);
-		loops[0].AddSound (2.5f);
-		loops[0].AddSound (3.75f);
+		loops[0].AddSound(0,0.0f);
+		loops[0].AddSound (0,1.25f);
+		loops[0].AddSound (0,2.5f);
+		loops[0].AddSound (0,3.75f);
 
 	}
 
