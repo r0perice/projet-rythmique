@@ -5,6 +5,8 @@
 ## DONE ##
 
 TK-32 : Ajouter un métronome
+TK-23 : Changer la taille des disques en fonction de la durée de la boucle
+TK-25 : Changer l'axe de rotation des cylindres
 
 ## IN PROGRESS ##
 
