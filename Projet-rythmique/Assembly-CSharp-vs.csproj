@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Animation.cs" />
      <Compile Include="Assets\Scripts\Loop.cs" />
+     <Compile Include="Assets\Scripts\Metronome.cs" />
      <Compile Include="Assets\Scripts\Music.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
  <Reference Include="UnityEngine.UI">

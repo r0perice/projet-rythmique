@@ -4,52 +4,57 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Loop : MonoBehaviour
-{
-	//private Sound sound;
-	public Animation anim;
+/// <summary>
+/// Cette classe permet de définir une boucle qui pourra contenir des sons.
+/// </summary>
 
-	private float adjustedTime = 0.0f;
-	private bool adjustment = false;
-	public float loopTime = 0.0f;
-	private float ratio;
-	private int clipNumber;
-	private int loopDuration;
-	private double accuracy = 5.0f;
+public class Loop : MonoBehaviour {
+
+	public Animation anim; //!< 
+	public float loopTime = 0.0f; //!< Temps courant de la boucle.
+	private float ratio; //!< 
+	private int clipNumber; //!< Numéro du clip.
+	private int loopDuration; //!< Durée de la boucle.
+	private double accuracy = 5.0f; //<! Précision (utilisée pour la lecture des sons des différentes boucles).
 	
-	public List<Sound> sounds = new List<Sound>();
-	
+	public List<Sound> sounds = new List<Sound>(); //!< Liste des sons de la boucle.
+
+	/// <summary>
+	/// Initialisation de la boucle.
+	/// </summary>
 	public void Initialize()
 	{
-		ratio = Time.fixedDeltaTime / 0.02f;
-		//sound = GetComponent<Sound> ();
-
+		ratio = Time.fixedDeltaTime / 0.02f; // Définition du ratio permet d'avoir un loopTime en secondes.
 	}
-	
-	public void AddSound(int clipNumber, float lt=-1)
-	{
-		GameObject go = GameObject.Find("Main Camera");
-		Sound other = (Sound) go.GetComponent(typeof(Sound));
 
-		if (lt == -1) {
-			Sound son = new Sound (other.Clips [clipNumber], loopTime, other.Clips [clipNumber].name);
-			adjustSound (son, 0.25f);
-		
-		} else {
-			Sound son = new Sound (other.Clips [clipNumber], lt, other.Clips [clipNumber].name);
-			adjustedTime=lt;
+	/// <summary>
+	/// Ajout d'un son à une boucle.
+	/// </summary>
+	/// <param name="clipNumber"> Numéro de l'AudioClip à ajouter à la boucle.</param>
+	/// <param name="lt"> Paramètre à fournir pour ajouter un son à un temps voulu.</param>
+	/// <param name="delay"> Décalage entre l'appui d'une touche et l'ajout d'un son.</param>
+	public void AddSound(int clipNumber, float lt=-1.0f, float delay=0.0f)
+	{
+		GameObject go = GameObject.Find("Main Camera"); // Pour accéder au script Sound.
+		Sound other = (Sound) go.GetComponent(typeof(Sound)); // Pour accéder aux AudioClips.
+
+		float t = lt;
+		if (lt <= -1.0f) {
+			t = loopTime; // Pour ajouter le son au temps donné en paramètre de la fonction.
 		}
 
+		t -= (delay / ratio) % loopDuration; // Application du décalage entre l'appui sur une touche et l'ajout d'un son
 
-		Sound _son = new Sound (other.Clips[clipNumber], adjustedTime, other.Clips[clipNumber].name);
-		sounds.Add (_son);
-		other = null;
-		adjustment = false;
+		Sound son = new Sound(other.Clips [clipNumber], t, other.Clips [clipNumber].name);
+		son.Time = adjustSound(son, 0.025f); // Récupération du temps ajusté ou non celon besoin.
+		sounds.Add (son); // Ajout du son à la liste de sons.
 	}
 
+	/// <summary>
+	/// Fonction qui parcourt la liste des sons pour les jouer.
+	/// </summary>
 	public void playSound()
 	{
-
 		foreach (Sound son in sounds) {
 			if ((Math.Abs (son.Time - loopTime + Time.fixedDeltaTime/ratio) <= Time.fixedDeltaTime*accuracy))
 			{
@@ -59,33 +64,33 @@ public class Loop : MonoBehaviour
 		}
 	}
 
-	public void adjustSound(Sound son, float marge) 
+	/// <summary>
+	/// Ajustement du son si nécessaire. 
+	/// Si à l'appui d'une touche un son se trouve déjà proche du 
+	/// </summary>
+	/// <returns>The sound.</returns>
+	/// <param name="son">Son.</param>
+	/// <param name="marge">Marge.</param>
+	public float adjustSound(Sound son, float marge) 
 	{
+		float adjustedTime = son.Time;
+
 		if (sounds.Count != 0) {
 			for (int i =0; i<sounds.Count(); i++) {
-				if ((Math.Abs (sounds[i].Time - loopTime)) <= marge) {
-					if (sounds[i].Title == son.Title) {
-						adjustment = true;
-						adjustedTime = (sounds[i].Time + loopTime) / 2f;
-						// PROBLEME : si sound trop proche de la durée de la boucle
-						sounds.RemoveAt(i);
-						Destroy(anim.Spheres[i]);
-						anim.Spheres.RemoveAt(i);
+
+				if ((Math.Abs (sounds [i].Time - son.Time)) <= marge) {
+					if (sounds [i].Title == son.Title) {
+
+						adjustedTime = (sounds [i].Time + son.Time) / 2f;
+						sounds.RemoveAt (i);
+						//Destroy (anim.Spheres [i]);
+						anim.Spheres.RemoveAt (i);
 					}
-				} else if (adjustment == false) {
-					adjustedTime = loopTime;
 				}
 			}
-		} else {
-			adjustedTime = loopTime;
 		}
-
+		return adjustedTime;
 	}
-
-	// Centre la camera
-	/*public void cameraMove(){ 
-		Camera.main.transform.Translate(new Vector3((size/10.0f+cylinderGap)/2.0f,0f,0f));
-	}*/
 
 	public float Ratio {
 		get {
@@ -105,15 +110,6 @@ public class Loop : MonoBehaviour
 		}
 	}
 
-	public int ClipNumber {
-		get {
-			return clipNumber;
-		}
-		set {
-			clipNumber = value;
-		}
-	}	
-
 	public int LoopDuration {
 		get {
 			return loopDuration;
@@ -130,6 +126,11 @@ public class Loop : MonoBehaviour
 		set {
 			accuracy = value;
 		}
+	}
+
+	public float updateLoopTime(float t)
+	{
+		return loopTime = (t / ratio) % loopDuration;
 	}
 }
 	
