@@ -1,6 +1,4 @@
-﻿/** TEST MERGE GIT **/
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System;
 
