@@ -1,7 +1,0 @@
-/**
-*@mainpage projet SimpleBlog
-*
-*texte HTML place dans la
-*page principale (index.html)
-*
-*/

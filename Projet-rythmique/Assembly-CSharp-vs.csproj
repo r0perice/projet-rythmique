@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Animation.cs" />
+     <Compile Include="Assets\Scripts\Documentation.cs" />
      <Compile Include="Assets\Scripts\Loop.cs" />
      <Compile Include="Assets\Scripts\Metronome.cs" />
      <Compile Include="Assets\Scripts\Music.cs" />
