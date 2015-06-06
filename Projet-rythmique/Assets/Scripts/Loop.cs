@@ -18,6 +18,8 @@ public class Loop : MonoBehaviour {
 	private double accuracy = 5.0f; //<! Précision (utilisée pour la lecture des sons des différentes boucles).
 	
 	public List<Sound> sounds = new List<Sound>(); //!< Liste des sons de la boucle.
+	public List<GameObject> spheres = new List<GameObject>();
+
 
 	/// <summary>
 	/// Initialisation de la boucle.
@@ -84,13 +86,21 @@ public class Loop : MonoBehaviour {
 						adjustedTime = (sounds [i].Time + son.Time) / 2f;
 						sounds.RemoveAt (i);
 						//Destroy (anim.Spheres [i]);
-						anim.Spheres.RemoveAt (i);
+						spheres.RemoveAt (i);
 					}
 				}
 			}
 		}
 		return adjustedTime;
 	}
+
+	public void addSpheres(string nameToAdd){
+		foreach (GameObject go in GameObject.FindObjectsOfType(typeof(GameObject))) {
+			if (go.name == nameToAdd)
+				spheres.Add (go);	
+		}
+	}
+
 
 	public float Ratio {
 		get {
@@ -131,6 +141,15 @@ public class Loop : MonoBehaviour {
 	public float updateLoopTime(float t)
 	{
 		return loopTime = (t / ratio) % loopDuration;
+	}
+
+	public List<GameObject> Spheres {
+		get {
+			return spheres;
+		}
+		set {
+			spheres = value;
+		}
 	}
 }
 	

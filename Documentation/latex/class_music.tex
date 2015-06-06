@@ -1,0 +1,210 @@
+\hypertarget{class_music}{}\section{Référence de la classe Music}
+\label{class_music}\index{Music@{Music}}
+
+
+Classe principale de l\textquotesingle{}application. C\textquotesingle{}est elle qui possède un Fixed\+Update et qui met à jour tous les autres composants. C\textquotesingle{}est également dans cette classe que sont récuperés les events claviers.  
+
+
+Graphe d\textquotesingle{}héritage de Music\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_music}
+\end{center}
+\end{figure}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{class_loop}{Loop} $>$ \hyperlink{class_music_abe986f8a412fa868c341d9ba80e95dfd}{loops} = new List$<$\hyperlink{class_loop}{Loop}$>$()
+\begin{DoxyCompactList}\small\item\em Liste des différentes boucles contenants des sons. \end{DoxyCompactList}\item 
+\hyperlink{class_metronome}{Metronome} \hyperlink{class_music_a64db98945116f90a7af2ef7eec3cf232}{metro}
+\begin{DoxyCompactList}\small\item\em Le métronome. \end{DoxyCompactList}\item 
+Audio\+Source \hyperlink{class_music_af7e21d12bd49e617d8c66bbd548f658b}{audio}
+\begin{DoxyCompactList}\small\item\em Objet \href{http://docs.unity3d.com/ScriptReference/AudioSource.html}{\tt Audio\+Source} qui permet de jouer un son. \end{DoxyCompactList}\item 
+\hyperlink{class_animation}{Animation} \hyperlink{class_music_a79bb9b529e228f1a320b47f88ff71d45}{anim}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}intéragir avec la partie graphique de l\textquotesingle{}application (ajout de sphères/cylindre, animation des objets ...). \end{DoxyCompactList}\item 
+float \hyperlink{class_music_a59687d828abbd22accc0fe611026f270}{keyboard\+Delay} = 0.\+5f
+\begin{DoxyCompactList}\small\item\em Délai entre l\textquotesingle{}appui sur une touche et l\textquotesingle{}ajout d\textquotesingle{}un son dans une boucle. \end{DoxyCompactList}\item 
+float \hyperlink{class_music_a70cf89c5732793d69cce59b44b3e47f4}{position\+X}
+\begin{DoxyCompactList}\small\item\em Position de la caméra dans la scène en X. \end{DoxyCompactList}\item 
+float \hyperlink{class_music_a4d7d0c2af4148f072c1fb3ef94bbdc13}{position\+Y}
+\begin{DoxyCompactList}\small\item\em Position de la caméra dans la scène en Y. \end{DoxyCompactList}\item 
+float \hyperlink{class_music_a52ba6dc0dbd78bf134fdd6d7b6c563e9}{position\+Z}
+\begin{DoxyCompactList}\small\item\em Position de la caméra dans la scène en Z. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_music_a68d031f187927ba922a6ee304a561c07}{Loop\+Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{class_music_a08b2e446def0d17e713d4f723811b3be}{Loop\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_music_a88677b5b17d7881742cf8d0e23ac8207}{Start} ()
+\begin{DoxyCompactList}\small\item\em Démarrage du Script (voir \href{http://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html}{\tt Start}). \end{DoxyCompactList}\item 
+void \hyperlink{class_music_a57440cf9285a10dee627479fa0b7a3aa}{Fixed\+Update} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelée à chaque frame. Permet de lire les inputs clavier ainsi que de joeur les sons présents dans les boucles. \end{DoxyCompactList}\item 
+void \hyperlink{class_music_a063497fdbf5be69712dc08866e0e2ea5}{get\+Input} ()
+\begin{DoxyCompactList}\small\item\em Lit les inputs clavier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_music_a477118c7507d4eca7c99d5d431e91ddd}{duration\+Time}
+\begin{DoxyCompactList}\small\item\em Durée de la boucle qui va être créée. \end{DoxyCompactList}\item 
+bool \hyperlink{class_music_a0a0e48756d3ed859fd7bba17aa529732}{running} = true
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}application est en cours d\textquotesingle{}exécution. \end{DoxyCompactList}\item 
+int \hyperlink{class_music_a89ea80578a05f37ffefe4f83d6be0425}{loop\+Number} = 0
+\begin{DoxyCompactList}\small\item\em Numéro de la boucle qui va être créée. \end{DoxyCompactList}\item 
+int \hyperlink{class_music_a314e1e14f9b0f2fc88672df0a54ceda2}{loop\+Selected} = 0
+\begin{DoxyCompactList}\small\item\em Boucle selectionnée (en jaune). \end{DoxyCompactList}\item 
+float \hyperlink{class_music_adf1ab3cb19a41e9e4eed57e41a420426}{fov} = 2.\+0f
+\begin{DoxyCompactList}\small\item\em \href{http://docs.unity3d.com/ScriptReference/Camera-fieldOfView.html}{\tt Champ Visuel}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe principale de l\textquotesingle{}application. C\textquotesingle{}est elle qui possède un Fixed\+Update et qui met à jour tous les autres composants. C\textquotesingle{}est également dans cette classe que sont récuperés les events claviers. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_music_a57440cf9285a10dee627479fa0b7a3aa}{}\index{Music@{Music}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Music@{Music}}
+\subsubsection[{Fixed\+Update}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Fixed\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a57440cf9285a10dee627479fa0b7a3aa}
+
+
+Fonction appelée à chaque frame. Permet de lire les inputs clavier ainsi que de joeur les sons présents dans les boucles. 
+
+\hypertarget{class_music_a063497fdbf5be69712dc08866e0e2ea5}{}\index{Music@{Music}!get\+Input@{get\+Input}}
+\index{get\+Input@{get\+Input}!Music@{Music}}
+\subsubsection[{get\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+get\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a063497fdbf5be69712dc08866e0e2ea5}
+
+
+Lit les inputs clavier. 
+
+\hypertarget{class_music_a88677b5b17d7881742cf8d0e23ac8207}{}\index{Music@{Music}!Start@{Start}}
+\index{Start@{Start}!Music@{Music}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a88677b5b17d7881742cf8d0e23ac8207}
+
+
+Démarrage du Script (voir \href{http://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html}{\tt Start}). 
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_music_a79bb9b529e228f1a320b47f88ff71d45}{}\index{Music@{Music}!anim@{anim}}
+\index{anim@{anim}!Music@{Music}}
+\subsubsection[{anim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation} Music.\+anim}\label{class_music_a79bb9b529e228f1a320b47f88ff71d45}
+
+
+Permet d\textquotesingle{}intéragir avec la partie graphique de l\textquotesingle{}application (ajout de sphères/cylindre, animation des objets ...). 
+
+\hypertarget{class_music_af7e21d12bd49e617d8c66bbd548f658b}{}\index{Music@{Music}!audio@{audio}}
+\index{audio@{audio}!Music@{Music}}
+\subsubsection[{audio}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+Source Music.\+audio}\label{class_music_af7e21d12bd49e617d8c66bbd548f658b}
+
+
+Objet \href{http://docs.unity3d.com/ScriptReference/AudioSource.html}{\tt Audio\+Source} qui permet de jouer un son. 
+
+\hypertarget{class_music_a477118c7507d4eca7c99d5d431e91ddd}{}\index{Music@{Music}!duration\+Time@{duration\+Time}}
+\index{duration\+Time@{duration\+Time}!Music@{Music}}
+\subsubsection[{duration\+Time}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+duration\+Time\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a477118c7507d4eca7c99d5d431e91ddd}
+
+
+Durée de la boucle qui va être créée. 
+
+\hypertarget{class_music_adf1ab3cb19a41e9e4eed57e41a420426}{}\index{Music@{Music}!fov@{fov}}
+\index{fov@{fov}!Music@{Music}}
+\subsubsection[{fov}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+fov = 2.\+0f\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_adf1ab3cb19a41e9e4eed57e41a420426}
+
+
+\href{http://docs.unity3d.com/ScriptReference/Camera-fieldOfView.html}{\tt Champ Visuel}. 
+
+\hypertarget{class_music_a59687d828abbd22accc0fe611026f270}{}\index{Music@{Music}!keyboard\+Delay@{keyboard\+Delay}}
+\index{keyboard\+Delay@{keyboard\+Delay}!Music@{Music}}
+\subsubsection[{keyboard\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+keyboard\+Delay = 0.\+5f}\label{class_music_a59687d828abbd22accc0fe611026f270}
+
+
+Délai entre l\textquotesingle{}appui sur une touche et l\textquotesingle{}ajout d\textquotesingle{}un son dans une boucle. 
+
+\hypertarget{class_music_a89ea80578a05f37ffefe4f83d6be0425}{}\index{Music@{Music}!loop\+Number@{loop\+Number}}
+\index{loop\+Number@{loop\+Number}!Music@{Music}}
+\subsubsection[{loop\+Number}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+loop\+Number = 0\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a89ea80578a05f37ffefe4f83d6be0425}
+
+
+Numéro de la boucle qui va être créée. 
+
+\hypertarget{class_music_abe986f8a412fa868c341d9ba80e95dfd}{}\index{Music@{Music}!loops@{loops}}
+\index{loops@{loops}!Music@{Music}}
+\subsubsection[{loops}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Loop}$>$ Music.\+loops = new List$<${\bf Loop}$>$()}\label{class_music_abe986f8a412fa868c341d9ba80e95dfd}
+
+
+Liste des différentes boucles contenants des sons. 
+
+\hypertarget{class_music_a314e1e14f9b0f2fc88672df0a54ceda2}{}\index{Music@{Music}!loop\+Selected@{loop\+Selected}}
+\index{loop\+Selected@{loop\+Selected}!Music@{Music}}
+\subsubsection[{loop\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+loop\+Selected = 0\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a314e1e14f9b0f2fc88672df0a54ceda2}
+
+
+Boucle selectionnée (en jaune). 
+
+\hypertarget{class_music_a64db98945116f90a7af2ef7eec3cf232}{}\index{Music@{Music}!metro@{metro}}
+\index{metro@{metro}!Music@{Music}}
+\subsubsection[{metro}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Metronome} Music.\+metro}\label{class_music_a64db98945116f90a7af2ef7eec3cf232}
+
+
+Le métronome. 
+
+\hypertarget{class_music_a70cf89c5732793d69cce59b44b3e47f4}{}\index{Music@{Music}!position\+X@{position\+X}}
+\index{position\+X@{position\+X}!Music@{Music}}
+\subsubsection[{position\+X}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+position\+X}\label{class_music_a70cf89c5732793d69cce59b44b3e47f4}
+
+
+Position de la caméra dans la scène en X. 
+
+\hypertarget{class_music_a4d7d0c2af4148f072c1fb3ef94bbdc13}{}\index{Music@{Music}!position\+Y@{position\+Y}}
+\index{position\+Y@{position\+Y}!Music@{Music}}
+\subsubsection[{position\+Y}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+position\+Y}\label{class_music_a4d7d0c2af4148f072c1fb3ef94bbdc13}
+
+
+Position de la caméra dans la scène en Y. 
+
+\hypertarget{class_music_a52ba6dc0dbd78bf134fdd6d7b6c563e9}{}\index{Music@{Music}!position\+Z@{position\+Z}}
+\index{position\+Z@{position\+Z}!Music@{Music}}
+\subsubsection[{position\+Z}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+position\+Z}\label{class_music_a52ba6dc0dbd78bf134fdd6d7b6c563e9}
+
+
+Position de la caméra dans la scène en Z. 
+
+\hypertarget{class_music_a0a0e48756d3ed859fd7bba17aa529732}{}\index{Music@{Music}!running@{running}}
+\index{running@{running}!Music@{Music}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}bool Music.\+running = true\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a0a0e48756d3ed859fd7bba17aa529732}
+
+
+L\textquotesingle{}application est en cours d\textquotesingle{}exécution. 
+
+
+
+\subsection{Documentation des propriétés}
+\hypertarget{class_music_a68d031f187927ba922a6ee304a561c07}{}\index{Music@{Music}!Loop\+Number@{Loop\+Number}}
+\index{Loop\+Number@{Loop\+Number}!Music@{Music}}
+\subsubsection[{Loop\+Number}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+Loop\+Number\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_music_a68d031f187927ba922a6ee304a561c07}
+\hypertarget{class_music_a08b2e446def0d17e713d4f723811b3be}{}\index{Music@{Music}!Loop\+Selected@{Loop\+Selected}}
+\index{Loop\+Selected@{Loop\+Selected}!Music@{Music}}
+\subsubsection[{Loop\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+Loop\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_music_a08b2e446def0d17e713d4f723811b3be}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/robin/\+Google Drive/\+Travail/\+S9/\+P\+R\+I/projet rythmique github/projet-\/unity/projet-\/rythmique/\+Projet-\/rythmique/\+Assets/\+Scripts/\hyperlink{_music_8cs}{Music.\+cs}\end{DoxyCompactItemize}

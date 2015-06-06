@@ -11,17 +11,21 @@ using System.Collections.Generic;
 public class Music : MonoBehaviour {
 	
 	public List<Loop> loops = new List<Loop>(); //!< Liste des différentes boucles contenants des sons.
+	public List<GameObject> objects = new List<GameObject> ();
 
 	public Metronome metro; //!< Le métronome.
 	public AudioSource audio; //!< Objet <a href="http://docs.unity3d.com/ScriptReference/AudioSource.html">AudioSource</a> qui permet de jouer un son.
 	public Animation anim; //!< Permet d'intéragir avec la partie graphique de l'application (ajout de sphères/cylindre, animation des objets ...).
+
+	public Loop loop;
+	public GameObject go;
 
 	private int durationTime; //!< Durée de la boucle qui va être créée.
 	private bool running = true; //!< L'application est en cours d'exécution.
 	private int loopNumber = 0; //!< Numéro de la boucle qui va être créée.
 	private int loopSelected = 0; //!< Boucle selectionnée (en jaune).
 
-	public float keyboardDelay = 0.5f; //!< Délai entre l'appui sur une touche et l'ajout d'un son dans une boucle.
+	public float keyboardDelay = 0.05f; //!< Délai entre l'appui sur une touche et l'ajout d'un son dans une boucle.
 	
 	public float positionX; //!< Position de la caméra dans la scène en X.
 	public float positionY; //!< Position de la caméra dans la scène en Y.
@@ -56,19 +60,21 @@ public class Music : MonoBehaviour {
 	/// </summary>
 	void FixedUpdate()
 	{
-		if (metro.MetronomeSpheres == true) {
-			metro.addMetronomeSpheres (); // Ajout des sphères du métronome.
-		} 
 
-		else {
-			getInput (); // Quand le métronome est fini d'être crée alors on peut lire les inputs clavier pour créer de nouvelles boucle et y ajouter des sons.
-		}
+		getInput (); // Quand le métronome est fini d'être crée alors on peut lire les inputs clavier pour créer de nouvelles boucle et y ajouter des sons.
+
 
 		for (int i=0; i<loops.Count; i++) {
-			loops[i].updateLoopTime(Time.time); // Donne le temps courant à chaque boucle.
 			loops[i].playSound (); // Joue les sons des boucles.
 			anim.animateCylinder(0.02f * 360 / loops[i].LoopDuration,i); // Anime les cylindres représentants les boucles.
 		}
+	}
+
+	public void updateArray(string name){
+		Destroy((GameObject)GameObject.Find(name));
+		loops[loopSelected].Spheres.Clear();
+		loops.Remove(loops[loopSelected]);
+		anim.Cylinders.Remove((GameObject)GameObject.Find(name));
 	}
 
 	/// <summary>
@@ -78,7 +84,8 @@ public class Music : MonoBehaviour {
 	{
 		if (Input.GetKeyDown ("m")) // Mute le métronome.
 		{
-			audio = metro.GetComponent<AudioSource>();
+			GameObject go = GameObject.Find("Metronome");
+			audio = go.GetComponent<AudioSource>();
 			if (audio.mute)
 				audio.mute = false;
 			else
@@ -88,8 +95,17 @@ public class Music : MonoBehaviour {
 
 		if (Input.GetKeyDown ("x")) // Effacer une boucle.
 		{
-			Destroy(loops[loopSelected].gameObject);
-			loops.Remove(loops[loopSelected]);
+			if (loops.Count>1) {
+				updateArray(loops[loopSelected].gameObject.name);		
+				
+				for(int i=loopSelected; i<loops.Count; i++){
+					anim.Cylinders[i].transform.Translate(0,anim.CylinderGap,0,Space.World);
+				}
+
+				loopSelected=1;
+				anim.makeYellow(anim.Cylinders[loopSelected]);
+				anim.Size = loops[loopSelected].LoopDuration;
+			}
 		}
 
 		if (Input.GetKeyDown ("t")) // Augmente la durée de la boucle que l'on veut créer de une seconde.
@@ -108,19 +124,19 @@ public class Music : MonoBehaviour {
 		if (Input.GetKeyDown ("q")) // Ajout du son numéro 0 dans la boucle sélectionnée.
 		{
 			loops[loopSelected].AddSound(0,-1,keyboardDelay);
-			anim.drawSphere("black",loopSelected,positionX,positionY,positionZ); // Ajout d'une sphère représentant le son.
+			anim.drawSphere("black",loopSelected); // Ajout d'une sphère représentant le son.
 		}
 
 		if (Input.GetKeyDown ("s")) // Ajout du son numéro 1 dans la boucle sélectionnée.
 		{
 			loops[loopSelected].AddSound(1,-1,keyboardDelay);
-			anim.drawSphere("blue",loopSelected,positionX,positionY,positionZ); // Ajout d'une sphère représentant le son.
+			anim.drawSphere("blue",loopSelected); // Ajout d'une sphère représentant le son.
 		}
 		
 		if (Input.GetKeyDown ("d")) // Ajout du son numéro 2 dans la boucle sélectionnée.
 		{
 			loops[loopSelected].AddSound(2,-1,keyboardDelay);
-			anim.drawSphere("green",loopSelected,positionX,positionY,positionZ); // Ajout d'une sphère représentant le son.
+			anim.drawSphere("green",loopSelected); // Ajout d'une sphère représentant le son.
 		}
 
 		if (Input.GetKeyDown ("a")) // Ajout d'une boucle
@@ -133,7 +149,7 @@ public class Music : MonoBehaviour {
 			{
 
 				anim.Size = durationTime; // La taille du cylindre.
-				anim.drawCylinder(loopNumber,positionX,positionY,positionZ); // Dessin du cylindre représentant la boucle.
+				anim.drawCylinder(loopNumber); // Dessin du cylindre représentant la boucle.
 				GameObject go = (GameObject)anim.Cylinders[loopNumber]; // On récupère le dernier cylindre.
 				go.AddComponent<Loop>(); // On ajoute le Script Loop sur le GameObject.
 				go.AddComponent<AudioSource>(); // On ajoute le Script Sound sur le GameObject.

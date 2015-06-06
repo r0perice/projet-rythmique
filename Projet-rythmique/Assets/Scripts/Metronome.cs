@@ -28,7 +28,7 @@ public class Metronome : MonoBehaviour {
 	public void addMetronome (int dureeMetronome) {
 
 		music.anim.Size = dureeMetronome; // La taille du cylindre.
-		music.anim.drawCylinder(0,0,0,0); // Dessin du cylindre représentant le métronome au centre de la scène.
+		music.anim.drawCylinder(0,"Metronome"); // Dessin du cylindre représentant le métronome au centre de la scène.
 		GameObject go = (GameObject)music.anim.Cylinders[0]; // On récupère le premier cylindre.
 		go.AddComponent<Loop>(); // On ajoute le Script Loop sur le GameObject.
 		go.AddComponent<Sound>(); // On ajoute le Script Sound sur le GameObject.
@@ -60,21 +60,21 @@ public class Metronome : MonoBehaviour {
 		if (Math.Abs (music.loops [0].sounds [0].Time - music.loops [0].LoopTime + 
 		              Time.fixedDeltaTime / music.loops [0].Ratio) <= Time.fixedDeltaTime * music.loops [0].Accuracy) { 
 			music.anim.Size = music.loops[0].LoopTime;
-			music.anim.drawSphere ("red", 0, 0, 0, 0);
+			music.anim.drawSphere ("red", 0);
 			metronomeSpheresCount++;
 		}
 		
 		if (Math.Abs (music.loops [0].sounds [1].Time - music.loops [0].LoopTime + 
 		              Time.fixedDeltaTime / music.loops [0].Ratio) <= Time.fixedDeltaTime * music.loops [0].Accuracy) {
 			music.anim.Size = music.loops[0].LoopTime;
-			music.anim.drawSphere ("red", 0, 0, 0, 0);
+			music.anim.drawSphere ("red", 0);
 			metronomeSpheresCount++;
 		}
 		
 		if (Math.Abs (music.loops [0].sounds [2].Time - music.loops [0].LoopTime + 
 		              Time.fixedDeltaTime / music.loops [0].Ratio) <= Time.fixedDeltaTime * music.loops [0].Accuracy) {
 			music.anim.Size = music.loops[0].LoopTime;
-			music.anim.drawSphere ("red", 0, 0, 0, 0);
+			music.anim.drawSphere ("red", 0);
 			metronomeSpheresCount++;
 		}
 		
@@ -82,11 +82,11 @@ public class Metronome : MonoBehaviour {
 		              Time.fixedDeltaTime / music.loops [0].Ratio) <= Time.fixedDeltaTime * music.loops [0].Accuracy) {
 
 			music.anim.Size = music.loops[0].LoopTime;
-			music.anim.drawSphere ("red", 0, 0, 0, 0);
+			music.anim.drawSphere ("red", 0);
 			metronomeSpheresCount++;
 		}
 		
-		if (metronomeSpheresCount == music.loops [0].sounds.Count) { // Si le nombre de sphères est égal au nombre de son dans la boucle du métronome alors on arrête d'en dessiner.
+		if (metronomeSpheresCount >= music.loops [0].sounds.Count) { // Si le nombre de sphères est égal au nombre de son dans la boucle du métronome alors on arrête d'en dessiner.
 			metronomeSpheres = false;
 		}
 	}

@@ -12,13 +12,10 @@ using System.Collections.Generic;
 public class Animation : MonoBehaviour {
 
 	private GameObject container; //!< Utiliser pour permet aux cylindres d'être le parent des sphères.
-	private GameObject cyl; //!< GameObject utilisé pour la création d'un cylindre.
-	private GameObject sph; //!< GameObject utulisé pour la création d'une sphères.
 	
 	private Dictionary<string, Color> MyColors = new Dictionary<string, Color> (); //!< Dictionnaire de couleur.
 
 	public List<GameObject> cylinders = new List<GameObject>(); //!< Liste des cylindres.
-	public List<GameObject> spheres = new List<GameObject>(); //!< Liste des sphères.
 
 	private float size; //!< Taille des cylindres et sphères.
 	private float sizeY = 0.1f; //!< sizeY = size * sizeRatio
@@ -51,7 +48,8 @@ public class Animation : MonoBehaviour {
 	/// <param name="posY"> Position en Y de la barre d'action</param>
 	/// <param name="posZ"> Position en Z de la barre d'action</param>
 	public void drawLine(float posX, float posY, float posZ){
-		GameObject lin = GameObject.CreatePrimitive (PrimitiveType.Cylinder); // Création d'un GameObject en forme de cylindre.
+		GameObject lin;
+		lin = GameObject.CreatePrimitive (PrimitiveType.Cylinder);
 		lin.name = "RedLine"; // Nom de la barre d'action.
 		lin.transform.position = new Vector3 (posX, posY, posZ); // Positionnement de la barre d'action.
 		lin.transform.localScale = new Vector3 (0.05f, 10f, 0.05f); // Ajustement de la taille de la barre d'action.
@@ -67,7 +65,9 @@ public class Animation : MonoBehaviour {
 	/// <param name="posY"> Position en Y de la sphère.</param>
 	/// <param name="posZ"> Position en Z de la sphère.</param>
 
-	public void drawSphere(string colorName, int number, float posX, float posY, float posZ){
+	public void drawSphere(string colorName, int number, float posX=0.0f, float posY=0.0f, float posZ=0.0f){
+		GameObject sph;
+		GameObject go;
 		sph = GameObject.CreatePrimitive (PrimitiveType.Sphere); // Création d'un GameObkect en forme de sphère;
 		sph.name = "Sphere_" + number; // Numéro de la sphère.
 		container.transform.parent = cylinders [number].transform; // Utilisation gameObjet intermédiaire afin d'éviter le scaling de cylinder.
@@ -75,7 +75,10 @@ public class Animation : MonoBehaviour {
 		sph.transform.position = new Vector3 ((posX+((1.0f+size/10.0f)/2.0f)+gap)-((1.0f+size/10.0f)/2.0f), posY-(cylinderGap*number), posZ); // Positionnement de la sphère.
 		sph.transform.localScale = new Vector3(sizeY,sizeY,sizeY); // Ajutement de la taille.
 		sph.GetComponent<Renderer>().material.color = MyColors[colorName]; // Application de la couleur.
-		spheres.Add (sph); // Ajout de la sphère à la liste de sphères.
+		go = GameObject.Find(sph.transform.parent.parent.name); // trouve le gameobject grand parent (avec le nom)
+		Loop other = (Loop) go.GetComponent(typeof(Loop));
+		Debug.Log ("go : " + go);
+		other.addSpheres (sph.name);
 	}
 
 	/// <summary>
@@ -102,15 +105,29 @@ public class Animation : MonoBehaviour {
 	/// <param name="posX"> Position en X du cylindre.</param>
 	/// <param name="posY"> Position en Y du cylindre.</param>
 	/// <param name="posZ"> Position en Z du cylindre.</param>
-	public void drawCylinder(int number, float posX, float posY, float posZ){
-		container = new GameObject ("Container_"+number); //!< [A COMPLETER]
-		cyl = GameObject.CreatePrimitive (PrimitiveType.Cylinder); // Création d'un GameObject en forme de cylindre.
-		cyl.name = "Cylinder_" + number; // Numéro du cylindre
-		cyl.transform.position = new Vector3 (posX+((1.0f+size/10.0f)/2.0f)+gap, posY-(cylinderGap*number), posZ); // Positionnement du cylindre.
-		cyl.transform.localScale = new Vector3(1.0f+size/10.0f, sizeY, 1.0f+size/10.0f); // Ajustement de la taille.
-		cylinders.Add (cyl); // Ajout du cylindre à la liste des cylindres.
-		cameraMove (posY-cylinderGap); // Re-positionnement de la caméra.
+	public void drawCylinder(int number,string name="Cylinder_", float posX=0.0f, float posY=0.0f, float posZ=0.0f){
+		GameObject cyl;
+		
+		container = new GameObject();
+		cyl = GameObject.CreatePrimitive (PrimitiveType.Cylinder);
+		
+		if (name != "Cylinder_") {
+			cyl.name = name;
+			container.name = "Container_"+ name;
+		} 
+		else {
+			cyl.name = name+number;
+			container.name = "Container_" + number;
+		}
+		
+		cyl.transform.position = new Vector3 (posX+((1.0f+size/10.0f)/2.0f)+gap, posY-(cylinderGap*number), posZ); // EXCENTRE
+		cyl.transform.localScale = new Vector3(1.0f+size/10.0f, sizeY, 1.0f+size/10.0f);
+		
+		addCylinders(cyl.name);
+		
+		cameraMove (posY-cylinderGap);
 	}
+
 
 	/// <summary>
 	/// Animation des différents cylindres.
@@ -130,7 +147,14 @@ public class Animation : MonoBehaviour {
 			Camera.main.transform.Translate(new Vector3(-dist/2.0f,0f));
 		}
 	}
-	
+
+	public void addCylinders(string nameToAdd){
+		foreach (GameObject go in GameObject.FindObjectsOfType(typeof(GameObject))) {
+			if (go.name == nameToAdd)
+				cylinders.Add (go);
+		}
+	}
+
 	public float CylinderGap {
 		get {
 			return cylinderGap;
@@ -142,12 +166,7 @@ public class Animation : MonoBehaviour {
 			return cylinders;
 		}
 	}
-
-	public List<GameObject> Spheres {
-		get {
-			return spheres;
-		}
-	}
+	
 
 	public float Size {
 		get {
@@ -155,6 +174,12 @@ public class Animation : MonoBehaviour {
 		}
 		set {
 			size = value;
+		}
+	}
+
+	public float SizeY {
+		get {
+			return sizeY;
 		}
 	}
 }

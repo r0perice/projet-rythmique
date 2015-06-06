@@ -1,0 +1,198 @@
+\hypertarget{class_loop}{}\section{Référence de la classe Loop}
+\label{class_loop}\index{Loop@{Loop}}
+
+
+Cette classe permet de définir une boucle qui pourra contenir des sons.  
+
+
+Graphe d\textquotesingle{}héritage de Loop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_loop}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_loop_a99c70fc61bce58f6cef6e5602cede3a6}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initialisation de la boucle. \end{DoxyCompactList}\item 
+void \hyperlink{class_loop_aa45c2a57eb46812a99464c55073f3f59}{Add\+Sound} (int \hyperlink{class_loop_a00a7cf02a16a43e61c62856cd5d6b014}{clip\+Number}, float lt=-\/1.\+0f, float delay=0.\+0f)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}un son à une boucle. \end{DoxyCompactList}\item 
+void \hyperlink{class_loop_a3a228a27bd11fd29c62845024654e68b}{play\+Sound} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui parcourt la liste des sons pour les jouer. \end{DoxyCompactList}\item 
+float \hyperlink{class_loop_a9c71ffe3425e8cdf0da28f49e19af787}{adjust\+Sound} (\hyperlink{class_sound}{Sound} son, float marge)
+\begin{DoxyCompactList}\small\item\em Ajustement du son si nécessaire. Si à l\textquotesingle{}appui d\textquotesingle{}une touche un son se trouve déjà proche du \end{DoxyCompactList}\item 
+float \hyperlink{class_loop_ab8cef4905a0b7773933984f5f464c42d}{update\+Loop\+Time} (float t)
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_animation}{Animation} \hyperlink{class_loop_ad4acc54b546f6270d11c5015c3c5a4e6}{anim}
+\item 
+float \hyperlink{class_loop_ab6f3df1dceea6e92a1728d8ad3558f4b}{loop\+Time} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Temps courant de la boucle. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{class_sound}{Sound} $>$ \hyperlink{class_loop_a36bc41b6866c834ca9b55ecb8c4c2a0f}{sounds} = new List$<$\hyperlink{class_sound}{Sound}$>$()
+\begin{DoxyCompactList}\small\item\em Liste des sons de la boucle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_loop_a5225d2e331631be4e6613966b967c8aa}{Ratio}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_loop_a6ffef5494771b4e64e3a4976e418860a}{Loop\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{class_loop_a7f64ca10d484fe6b88814fb01d39b193}{Loop\+Duration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \hyperlink{class_loop_a7003ed32b3c459138d9c4b5276c5c48d}{Accuracy}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_loop_a483ac8b940665a7661559d82b9f8b3e5}{ratio}
+\item 
+int \hyperlink{class_loop_a00a7cf02a16a43e61c62856cd5d6b014}{clip\+Number}
+\begin{DoxyCompactList}\small\item\em Numéro du clip. \end{DoxyCompactList}\item 
+int \hyperlink{class_loop_a781c98a230f1e6d2e4f4a36d9c0a4a24}{loop\+Duration}
+\begin{DoxyCompactList}\small\item\em Durée de la boucle. \end{DoxyCompactList}\item 
+double \hyperlink{class_loop_a1e9897b50db8948891a1af99c7f354ca}{accuracy} = 5.\+0f
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Cette classe permet de définir une boucle qui pourra contenir des sons. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_loop_aa45c2a57eb46812a99464c55073f3f59}{}\index{Loop@{Loop}!Add\+Sound@{Add\+Sound}}
+\index{Add\+Sound@{Add\+Sound}!Loop@{Loop}}
+\subsubsection[{Add\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}void Loop.\+Add\+Sound (
+\begin{DoxyParamCaption}
+\item[{int}]{clip\+Number, }
+\item[{float}]{lt = {\ttfamily -\/1.0f}, }
+\item[{float}]{delay = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}\label{class_loop_aa45c2a57eb46812a99464c55073f3f59}
+
+
+Ajout d\textquotesingle{}un son à une boucle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em clip\+Number} & Numéro de l\textquotesingle{}Audio\+Clip à ajouter à la boucle.\\
+\hline
+{\em lt} & Paramètre à fournir pour ajouter un son à un temps voulu.\\
+\hline
+{\em delay} & Décalage entre l\textquotesingle{}appui d\textquotesingle{}une touche et l\textquotesingle{}ajout d\textquotesingle{}un son.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_loop_a9c71ffe3425e8cdf0da28f49e19af787}{}\index{Loop@{Loop}!adjust\+Sound@{adjust\+Sound}}
+\index{adjust\+Sound@{adjust\+Sound}!Loop@{Loop}}
+\subsubsection[{adjust\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+adjust\+Sound (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound}}]{son, }
+\item[{float}]{marge}
+\end{DoxyParamCaption}
+)}\label{class_loop_a9c71ffe3425e8cdf0da28f49e19af787}
+
+
+Ajustement du son si nécessaire. Si à l\textquotesingle{}appui d\textquotesingle{}une touche un son se trouve déjà proche du 
+
+\begin{DoxyReturn}{Renvoie}
+The sound.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em son} & Son.\\
+\hline
+{\em marge} & Marge.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_loop_a99c70fc61bce58f6cef6e5602cede3a6}{}\index{Loop@{Loop}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Loop@{Loop}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Loop.\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_loop_a99c70fc61bce58f6cef6e5602cede3a6}
+
+
+Initialisation de la boucle. 
+
+\hypertarget{class_loop_a3a228a27bd11fd29c62845024654e68b}{}\index{Loop@{Loop}!play\+Sound@{play\+Sound}}
+\index{play\+Sound@{play\+Sound}!Loop@{Loop}}
+\subsubsection[{play\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}void Loop.\+play\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_loop_a3a228a27bd11fd29c62845024654e68b}
+
+
+Fonction qui parcourt la liste des sons pour les jouer. 
+
+\hypertarget{class_loop_ab8cef4905a0b7773933984f5f464c42d}{}\index{Loop@{Loop}!update\+Loop\+Time@{update\+Loop\+Time}}
+\index{update\+Loop\+Time@{update\+Loop\+Time}!Loop@{Loop}}
+\subsubsection[{update\+Loop\+Time}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+update\+Loop\+Time (
+\begin{DoxyParamCaption}
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)}\label{class_loop_ab8cef4905a0b7773933984f5f464c42d}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_loop_a1e9897b50db8948891a1af99c7f354ca}{}\index{Loop@{Loop}!accuracy@{accuracy}}
+\index{accuracy@{accuracy}!Loop@{Loop}}
+\subsubsection[{accuracy}]{\setlength{\rightskip}{0pt plus 5cm}double Loop.\+accuracy = 5.\+0f\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a1e9897b50db8948891a1af99c7f354ca}
+\hypertarget{class_loop_ad4acc54b546f6270d11c5015c3c5a4e6}{}\index{Loop@{Loop}!anim@{anim}}
+\index{anim@{anim}!Loop@{Loop}}
+\subsubsection[{anim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation} Loop.\+anim}\label{class_loop_ad4acc54b546f6270d11c5015c3c5a4e6}
+\hypertarget{class_loop_a00a7cf02a16a43e61c62856cd5d6b014}{}\index{Loop@{Loop}!clip\+Number@{clip\+Number}}
+\index{clip\+Number@{clip\+Number}!Loop@{Loop}}
+\subsubsection[{clip\+Number}]{\setlength{\rightskip}{0pt plus 5cm}int Loop.\+clip\+Number\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a00a7cf02a16a43e61c62856cd5d6b014}
+
+
+Numéro du clip. 
+
+\hypertarget{class_loop_a781c98a230f1e6d2e4f4a36d9c0a4a24}{}\index{Loop@{Loop}!loop\+Duration@{loop\+Duration}}
+\index{loop\+Duration@{loop\+Duration}!Loop@{Loop}}
+\subsubsection[{loop\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}int Loop.\+loop\+Duration\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a781c98a230f1e6d2e4f4a36d9c0a4a24}
+
+
+Durée de la boucle. 
+
+\hypertarget{class_loop_ab6f3df1dceea6e92a1728d8ad3558f4b}{}\index{Loop@{Loop}!loop\+Time@{loop\+Time}}
+\index{loop\+Time@{loop\+Time}!Loop@{Loop}}
+\subsubsection[{loop\+Time}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+loop\+Time = 0.\+0f}\label{class_loop_ab6f3df1dceea6e92a1728d8ad3558f4b}
+
+
+Temps courant de la boucle. 
+
+\hypertarget{class_loop_a483ac8b940665a7661559d82b9f8b3e5}{}\index{Loop@{Loop}!ratio@{ratio}}
+\index{ratio@{ratio}!Loop@{Loop}}
+\subsubsection[{ratio}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+ratio\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a483ac8b940665a7661559d82b9f8b3e5}
+\hypertarget{class_loop_a36bc41b6866c834ca9b55ecb8c4c2a0f}{}\index{Loop@{Loop}!sounds@{sounds}}
+\index{sounds@{sounds}!Loop@{Loop}}
+\subsubsection[{sounds}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Sound}$>$ Loop.\+sounds = new List$<${\bf Sound}$>$()}\label{class_loop_a36bc41b6866c834ca9b55ecb8c4c2a0f}
+
+
+Liste des sons de la boucle. 
+
+
+
+\subsection{Documentation des propriétés}
+\hypertarget{class_loop_a7003ed32b3c459138d9c4b5276c5c48d}{}\index{Loop@{Loop}!Accuracy@{Accuracy}}
+\index{Accuracy@{Accuracy}!Loop@{Loop}}
+\subsubsection[{Accuracy}]{\setlength{\rightskip}{0pt plus 5cm}double Loop.\+Accuracy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_loop_a7003ed32b3c459138d9c4b5276c5c48d}
+\hypertarget{class_loop_a7f64ca10d484fe6b88814fb01d39b193}{}\index{Loop@{Loop}!Loop\+Duration@{Loop\+Duration}}
+\index{Loop\+Duration@{Loop\+Duration}!Loop@{Loop}}
+\subsubsection[{Loop\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}int Loop.\+Loop\+Duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_loop_a7f64ca10d484fe6b88814fb01d39b193}
+\hypertarget{class_loop_a6ffef5494771b4e64e3a4976e418860a}{}\index{Loop@{Loop}!Loop\+Time@{Loop\+Time}}
+\index{Loop\+Time@{Loop\+Time}!Loop@{Loop}}
+\subsubsection[{Loop\+Time}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+Loop\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_loop_a6ffef5494771b4e64e3a4976e418860a}
+\hypertarget{class_loop_a5225d2e331631be4e6613966b967c8aa}{}\index{Loop@{Loop}!Ratio@{Ratio}}
+\index{Ratio@{Ratio}!Loop@{Loop}}
+\subsubsection[{Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+Ratio\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_loop_a5225d2e331631be4e6613966b967c8aa}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/robin/\+Google Drive/\+Travail/\+S9/\+P\+R\+I/projet rythmique github/projet-\/unity/projet-\/rythmique/\+Projet-\/rythmique/\+Assets/\+Scripts/\hyperlink{_loop_8cs}{Loop.\+cs}\end{DoxyCompactItemize}
