@@ -1,0 +1,2078 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: NVIDIA Quadro NVS 420 (Microsoft Corporation - WDDM v1.1) (ID=0x6f8)
+    Vendor:   NVIDIA
+    VRAM:     241 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\rythmique_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\rythmique_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\rythmique_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\rythmique_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\rythmique_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\rythmique_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.060 seconds
+desktop: 1920x1080 59Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+The referenced script on this Behaviour is missing!
+UnityEngine.Resources:Load(String, Type)
+UnityEngine.Resources:Load(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\ResourcesBindings.gen.cs:50)
+Music:AddLoop() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Music.cs:471)
+Predef:AddPredef(String) (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Predef.cs:26)
+Music:Start() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Music.cs:111)
+
+[C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp line 1713] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/ResourcesBindings.gen.cs Line: 50)
+
+The referenced script on this Behaviour is missing!
+UnityEngine.Object:Internal_CloneSingle(Object)
+UnityEngine.Object:Instantiate(Object) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:88)
+Music:AddLoop() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Music.cs:471)
+Predef:AddPredef(String) (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Predef.cs:26)
+Music:Start() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Music.cs:111)
+
+[C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp line 1713] 
+(Filename: C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.cs Line: 88)
+
+The referenced script on this Behaviour is missing!
+UnityEngine.Object:Internal_CloneSingle(Object)
+UnityEngine.Object:Instantiate(Object) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:88)
+Music:AddLoop() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Music.cs:471)
+Predef:AddPredef(String) (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Predef.cs:26)
+Music:Start() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Music.cs:111)
+
+[C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp line 1713] 
+(Filename: C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.cs Line: 88)
+
+The referenced script on this Behaviour is missing!
+UnityEngine.Object:Internal_CloneSingle(Object)
+UnityEngine.Object:Instantiate(Object) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:88)
+Music:AddLoop() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Music.cs:471)
+Predef:AddPredef(String) (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Predef.cs:26)
+Music:Start() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Music.cs:111)
+
+[C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp line 1713] 
+(Filename: C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.cs Line: 88)
+
+Looptime : 0.01
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 91c -> priority: 1 
+Looptime : 0.03
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.05
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.06999999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.09
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.11
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.13
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.15
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.17
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.19
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.21
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.23
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.25
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.27
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.29
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.31
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.33
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.35
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.37
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.39
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.41
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.43
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.45
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.47
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.4899999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.51
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.53
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.55
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.57
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.59
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.61
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.63
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.65
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.67
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.69
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.7099999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.73
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.7499999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.77
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.79
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.81
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.8299999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.85
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.8699999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.89
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.91
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.93
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.9499999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.9699999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.9899999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.01
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.03
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.05
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.07
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.09
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.11
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.13
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.15
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.17
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.19
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.21
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.23
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.25
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.27
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.29
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.31
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.33
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.35
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.37
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.39
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.41
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.43
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.45
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.47
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.49
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.51
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.53
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.55
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.57
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.59
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.61
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.63
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.65
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.67
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.69
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.71
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.73
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.75
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.77
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.79
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.81
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.83
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.85
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.87
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.89
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.91
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.93
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.95
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.97
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.99
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.01
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.03
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.05
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.07
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.09
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.11
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.13
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.15
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.17
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.19
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.21
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.23
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.25
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.27
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.29
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.31
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.33
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.35
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.37
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.39
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.41
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.43
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.45
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.47
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.49
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.51
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.53
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.55
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.57
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.59
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.61
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.63
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.65
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.67
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.69
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.71
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.73
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.75
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.77
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.79
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.81
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.83
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.85
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.87
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.89
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.91
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.93
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.95
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.97
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 2.99
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.01
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.03
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.05
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.07
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.09
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.11
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.13
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.15
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.17
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.19
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.21
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.23
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.25
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.27
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.29
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.31
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.33
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.35
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.37
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.39
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.41
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.43
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.45
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.47
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.49
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.51
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.53
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.55
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.57
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.59
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.61
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.63
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.65
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.67
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.69
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.71
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.73
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.75
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.77
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.79
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.81
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.83
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.85
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.87
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.89
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.91
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.93
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.95
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.97
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 3.99
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 4.01
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.02999974
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.04999978
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.06999982
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.08999985
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.1099999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.1299999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.15
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.1699997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.1899998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.2099998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.2299998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.2499999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.2699999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.2899999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.3099997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.3299997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.3499998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.3699998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.3899998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.4099999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.4299999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.45
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.4699997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.4899997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.5099998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.5299998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.5499998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.5699999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.5899999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.6099997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.6299997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.6499997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.6699998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.6899998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.7099999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.7299999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.7499999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.7699997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.7899997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.8099998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.8299998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.8499998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.8699999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.8899999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.9099997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.9299997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.9499997
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.9699998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 0.9899998
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.01
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.03
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.05
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.07
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.09
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.11
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.13
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.149999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.17
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.19
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.21
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.23
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.25
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.27
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.289999
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.31
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.33
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.35
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.37
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.39
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.41
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.43
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.45
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.47
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.49
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.51
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.53
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.55
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.57
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.59
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.61
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.63
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.65
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.67
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.69
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.71
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.73
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+
+Looptime : 1.75
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Loop:FixedUpdate() (at C:\Users\PR\Documents\finale\projet-rythmique\Projet-rythmique\Assets\Scripts\Loop.cs:61)
+ 
+(Filename: C:/Users/PR/Documents/finale/projet-rythmique/Projet-rythmique/Assets/Scripts/Loop.cs Line: 61)
+

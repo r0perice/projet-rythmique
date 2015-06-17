@@ -1,0 +1,627 @@
+\hypertarget{class_music}{}\section{Référence de la classe Music}
+\label{class_music}\index{Music@{Music}}
+
+
+Classe principale de l\textquotesingle{}application. C\textquotesingle{}est elle qui possède un Fixed\+Update et qui met à jour tous les autres composants. C\textquotesingle{}est également dans cette classe que sont récuperés les events claviers. La ligne rouge représente le moment ou les sons vont etre joués. Les cylindres représentent les boucles. Les sphères représentent les sons.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_music_a25d6adb92e3f3b05b996537d467a29f2}{Update\+Array} (int index=-\/1)
+\begin{DoxyCompactList}\small\item\em Met à jour la liste des boucles. \end{DoxyCompactList}\item 
+void \hyperlink{class_music_a3c969affd4d6d160a668e5fe33bec756}{Make\+Yellow} (Game\+Object go)
+\begin{DoxyCompactList}\small\item\em Met en surbrillance la boucle sélectionnée. \end{DoxyCompactList}\item 
+void \hyperlink{class_music_a118396d7b9526c5111f3d8d0e1f55c0d}{Destroy\+Loop} ()
+\begin{DoxyCompactList}\small\item\em Détruit la boucle sélectionnée. \end{DoxyCompactList}\item 
+void \hyperlink{class_music_afcef8e50a31bccf2cb425cfa851322d5}{Replace} (int select)
+\begin{DoxyCompactList}\small\item\em Re-\/positionne les boucles après une suppression. \end{DoxyCompactList}\item 
+void \hyperlink{class_music_ab103b2b4b594c28a547c5c44c4736390}{Add\+Loop} ()
+\begin{DoxyCompactList}\small\item\em Ajoute des boucles. \end{DoxyCompactList}\item 
+void \hyperlink{class_music_aecc7789c2058cbd454e28abef95a5f7e}{Camera\+Move} ()
+\begin{DoxyCompactList}\small\item\em Repositionnement de la caméra. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Game\+Object $>$ \hyperlink{class_music_ac34fdcf5a15ce705117105b68a72974d}{loops} = new List$<$Game\+Object$>$()
+\begin{DoxyCompactList}\small\item\em Liste des boucles. \end{DoxyCompactList}\item 
+Audio\+Source \hyperlink{class_music_ad7980e82c9bb7fc27ce15affbc4ef267}{audio\+Source}
+\begin{DoxyCompactList}\small\item\em Objet \href{http://docs.unity3d.com/ScriptReference/AudioSource.html}{\tt Audio\+Source} qui permet de jouer un son. \end{DoxyCompactList}\item 
+int \hyperlink{class_music_a2c0e87848bf12c5f29e62f22556f0bb0}{pressable\+Time} = 20
+\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_music_a20bb244d5d40d5848201077b577b0111}{Duration\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{class_music_a08b2e446def0d17e713d4f723811b3be}{Loop\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{class_music_a215cbe531ec3578d7c5a06305b7e7873}{Bpm}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_music_a84523fd3eb5ec2fa076d69dd0fd18373}{Mesure}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_music_a69b2158924c1cf3b72d8ad0aa31169b6}{wiimote\+\_\+start} ()
+\item 
+static void \hyperlink{class_music_ad87bc9d22b95c82090707ddc53ed5da8}{wiimote\+\_\+stop} ()
+\item 
+static int \hyperlink{class_music_a40595d7c6af2acb00fb2bb7841cb5f67}{wiimote\+\_\+count} ()
+\item 
+static bool \hyperlink{class_music_a0da54a9b72517be2ef96b56817730de4}{wiimote\+\_\+get\+Button\+A} (int which)
+\item 
+static bool \hyperlink{class_music_afa8c29f119c92db2e15df93fadb11008}{wiimote\+\_\+get\+Button\+B} (int which)
+\item 
+static byte \hyperlink{class_music_aee0db5bd6d8dcda6638368322eee4c85}{wiimote\+\_\+get\+Acc\+X} (int which)
+\item 
+static byte \hyperlink{class_music_a3a575f1623e1d8f08f9ef6a0fa3c0971}{wiimote\+\_\+get\+Acc\+Y} (int which)
+\item 
+static byte \hyperlink{class_music_a98817ef086d8628dbefb97c6dcc16784}{wiimote\+\_\+get\+Acc\+Z} (int which)
+\item 
+static float \hyperlink{class_music_acb804430cb256e5eed4c2f25e9792241}{wiimote\+\_\+get\+Roll} (int which)
+\item 
+static float \hyperlink{class_music_ab6d783cc9a08de26e36401ecefd0169f}{wiimote\+\_\+get\+Pitch} (int which)
+\item 
+static float \hyperlink{class_music_a8671f54d1c3d75b602c79e6b39c9707a}{wiimote\+\_\+get\+Yaw} (int which)
+\item 
+static bool \hyperlink{class_music_abe16123b93a805449f5125f3a461c704}{wiimote\+\_\+get\+Button\+Up} (int which)
+\item 
+static bool \hyperlink{class_music_a2684a38f892873250a4b720434c1a548}{wiimote\+\_\+get\+Button\+Left} (int which)
+\item 
+static bool \hyperlink{class_music_a4d3a8be82426aede2dcb42cd2618e93d}{wiimote\+\_\+get\+Button\+Right} (int which)
+\item 
+static bool \hyperlink{class_music_a7c5e9399a60e57bebf5c2e18b54ef499}{wiimote\+\_\+get\+Button\+Down} (int which)
+\item 
+static bool \hyperlink{class_music_a835f4686d6c9f04048ac82846d80c68d}{wiimote\+\_\+get\+Button1} (int which)
+\item 
+static bool \hyperlink{class_music_a159e2b41593b313b806b1fa75855a3b1}{wiimote\+\_\+get\+Button2} (int which)
+\item 
+static bool \hyperlink{class_music_afdd08708b534b7010afccc75124d8046}{wiimote\+\_\+get\+Button\+Plus} (int which)
+\item 
+static bool \hyperlink{class_music_a86a3c5ae8040d1c655a595ca23c61c33}{wiimote\+\_\+get\+Button\+Minus} (int which)
+\item 
+static bool \hyperlink{class_music_a24b68dad0f9ae028714d3106c748eda4}{wiimote\+\_\+get\+Button\+Home} (int which)
+\item 
+void \hyperlink{class_music_a88677b5b17d7881742cf8d0e23ac8207}{Start} ()
+\item 
+void \hyperlink{class_music_a57440cf9285a10dee627479fa0b7a3aa}{Fixed\+Update} ()
+\item 
+void \hyperlink{class_music_acb4d0b5d2b535f89fd14f1886baab776}{unable\+Press\+Key} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}empecher l\textquotesingle{}appuie sur une touche de la wii pendant un temps \textquotesingle{}pressable\+Time\textquotesingle{} afin de ne pas ajouter un son à chaque update si on reste appuyer sur un bouton de la Wii Remote. \end{DoxyCompactList}\item 
+void \hyperlink{class_music_a034233438c74e4b0d6f1fecf5de6cacb}{On\+G\+U\+I} ()
+\begin{DoxyCompactList}\small\item\em Dessine la fenetre graphique \end{DoxyCompactList}\item 
+void \hyperlink{class_music_a67cf059d4e7f913a246a06e53d177e6c}{draw\+G\+U\+I} (int id)
+\begin{DoxyCompactList}\small\item\em Dessine les boutons et récupère les événements associés. \end{DoxyCompactList}\item 
+void \hyperlink{class_music_a6bcab145b7a68dac28bed9bc32affc44}{get\+Input\+Wiimote} (int which)
+\begin{DoxyCompactList}\small\item\em Recupère les appuis sur les boutons de la wiimote. \end{DoxyCompactList}\item 
+bool \hyperlink{class_music_a09593624eba620da5d6cbb09d6e2e845}{play\+Sound\+With\+Movement} (String son)
+\item 
+void \hyperlink{class_music_a063497fdbf5be69712dc08866e0e2ea5}{get\+Input} ()
+\begin{DoxyCompactList}\small\item\em Lit les inputs clavier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \hyperlink{class_music_a1507118c48dd86cf0cc02e35e9a878d2}{line}
+\begin{DoxyCompactList}\small\item\em La ligne. \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_music_a8dee10ad61d1260dc55195c7a7c50d7c}{pos\+Line}
+\begin{DoxyCompactList}\small\item\em Position de la ligne. \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_music_ad8b992250bd9ff84988adc7c0091c321}{loop}
+\begin{DoxyCompactList}\small\item\em Le cylindre. \end{DoxyCompactList}\item 
+\hyperlink{class_predef}{Predef} \hyperlink{class_music_a23d19ec4b266573443920e3dacc9bd93}{predef}
+\begin{DoxyCompactList}\small\item\em Instance de \hyperlink{class_predef}{Predef} qui sert à accéder aux boucles prédéfinies. \end{DoxyCompactList}\item 
+Material \hyperlink{class_music_acf7deb58e516a37db39d3c9883d6034e}{yellow}
+\begin{DoxyCompactList}\small\item\em Définition du matériau Jaune. \end{DoxyCompactList}\item 
+Material \hyperlink{class_music_ac4412a8635c49f90692e3683931c0343}{neutre}
+\begin{DoxyCompactList}\small\item\em Définition du matériau Neutre. \end{DoxyCompactList}\item 
+float \hyperlink{class_music_ae4014f55d10343673bbf00004ebaaf31}{duration\+Time}
+\begin{DoxyCompactList}\small\item\em Durée de la boucle qui va être créée. \end{DoxyCompactList}\item 
+int \hyperlink{class_music_a89ea80578a05f37ffefe4f83d6be0425}{loop\+Number} = 0
+\begin{DoxyCompactList}\small\item\em Numéro de la boucle qui va être créée. \end{DoxyCompactList}\item 
+int \hyperlink{class_music_a314e1e14f9b0f2fc88672df0a54ceda2}{loop\+Selected} = -\/1
+\begin{DoxyCompactList}\small\item\em Boucle selectionnée (en jaune). \end{DoxyCompactList}\item 
+float \hyperlink{class_music_a32f83f56e3522b34faf524ef322459e7}{bpm} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Nombre de B\+P\+M (battements par minute). \end{DoxyCompactList}\item 
+float \hyperlink{class_music_adf436d51d0b5be109beae967b4d34522}{mesure} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Nombre de mesure. \end{DoxyCompactList}\item 
+String \hyperlink{class_music_a937e074ddcaba7ed3666cf872c94d97f}{wii\+\_\+display}
+\item 
+bool \hyperlink{class_music_ab653d0747a20992b8f891361ff75c2fc}{A}
+\item 
+bool \hyperlink{class_music_a16991bd6f416f0fe945e89d7d480cad6}{B}
+\item 
+int \hyperlink{class_music_acb9bb6d52e75b11d305be2a2ae180cb5}{X}
+\item 
+int \hyperlink{class_music_af45a2d376fdee07df8fc263f17e940b5}{Y}
+\item 
+int \hyperlink{class_music_ac55cf30eb31695f3b6ec7ace7a8abb19}{Z}
+\item 
+float \hyperlink{class_music_a2008a64ad37c7a232a8c206d7acdbd0f}{R}
+\item 
+float \hyperlink{class_music_a8811033babcd7646e477060f69d578e6}{P}
+\item 
+float \hyperlink{class_music_acd36d67bfd91798211295d45ef911c34}{W}
+\item 
+bool \hyperlink{class_music_a6525acdf11a00376a98d5178ab822886}{is\+Pressable} = true
+\item 
+int \hyperlink{class_music_a4d9b6dba41b560393edf85a675e8a84f}{nb\+Of\+Wiimote} = 0
+\item 
+bool \hyperlink{class_music_a207d2cf72a65ec7a1e4ce02e3cfd29b9}{cond\+Inf} = false
+\item 
+bool \hyperlink{class_music_aeeb6f3c67f4b24bb83aaecf68075f51b}{cond\+Sup} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe principale de l\textquotesingle{}application. C\textquotesingle{}est elle qui possède un Fixed\+Update et qui met à jour tous les autres composants. C\textquotesingle{}est également dans cette classe que sont récuperés les events claviers. La ligne rouge représente le moment ou les sons vont etre joués. Les cylindres représentent les boucles. Les sphères représentent les sons. 
+
+
+
+Est dérivée de Mono\+Behaviour.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_music_ab103b2b4b594c28a547c5c44c4736390}{}\index{Music@{Music}!Add\+Loop@{Add\+Loop}}
+\index{Add\+Loop@{Add\+Loop}!Music@{Music}}
+\subsubsection[{Add\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Add\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_music_ab103b2b4b594c28a547c5c44c4736390}
+
+
+Ajoute des boucles. 
+
+\hypertarget{class_music_aecc7789c2058cbd454e28abef95a5f7e}{}\index{Music@{Music}!Camera\+Move@{Camera\+Move}}
+\index{Camera\+Move@{Camera\+Move}!Music@{Music}}
+\subsubsection[{Camera\+Move}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Camera\+Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_music_aecc7789c2058cbd454e28abef95a5f7e}
+
+
+Repositionnement de la caméra. 
+
+\hypertarget{class_music_a118396d7b9526c5111f3d8d0e1f55c0d}{}\index{Music@{Music}!Destroy\+Loop@{Destroy\+Loop}}
+\index{Destroy\+Loop@{Destroy\+Loop}!Music@{Music}}
+\subsubsection[{Destroy\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Destroy\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_music_a118396d7b9526c5111f3d8d0e1f55c0d}
+
+
+Détruit la boucle sélectionnée. 
+
+\hypertarget{class_music_a67cf059d4e7f913a246a06e53d177e6c}{}\index{Music@{Music}!draw\+G\+U\+I@{draw\+G\+U\+I}}
+\index{draw\+G\+U\+I@{draw\+G\+U\+I}!Music@{Music}}
+\subsubsection[{draw\+G\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+draw\+G\+U\+I (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_music_a67cf059d4e7f913a246a06e53d177e6c}
+
+
+Dessine les boutons et récupère les événements associés. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & Identifiant de la fenetre.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_music_a57440cf9285a10dee627479fa0b7a3aa}{}\index{Music@{Music}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Music@{Music}}
+\subsubsection[{Fixed\+Update}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Fixed\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_music_a57440cf9285a10dee627479fa0b7a3aa}
+\hypertarget{class_music_a063497fdbf5be69712dc08866e0e2ea5}{}\index{Music@{Music}!get\+Input@{get\+Input}}
+\index{get\+Input@{get\+Input}!Music@{Music}}
+\subsubsection[{get\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+get\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_music_a063497fdbf5be69712dc08866e0e2ea5}
+
+
+Lit les inputs clavier. 
+
+\hypertarget{class_music_a6bcab145b7a68dac28bed9bc32affc44}{}\index{Music@{Music}!get\+Input\+Wiimote@{get\+Input\+Wiimote}}
+\index{get\+Input\+Wiimote@{get\+Input\+Wiimote}!Music@{Music}}
+\subsubsection[{get\+Input\+Wiimote}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+get\+Input\+Wiimote (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_music_a6bcab145b7a68dac28bed9bc32affc44}
+
+
+Recupère les appuis sur les boutons de la wiimote. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em which} & Le numéro de la Wii\+Mote.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_music_a3c969affd4d6d160a668e5fe33bec756}{}\index{Music@{Music}!Make\+Yellow@{Make\+Yellow}}
+\index{Make\+Yellow@{Make\+Yellow}!Music@{Music}}
+\subsubsection[{Make\+Yellow}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Make\+Yellow (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{go}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_music_a3c969affd4d6d160a668e5fe33bec756}
+
+
+Met en surbrillance la boucle sélectionnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em go} & La boucle à mettre en surbrillance\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_music_a034233438c74e4b0d6f1fecf5de6cacb}{}\index{Music@{Music}!On\+G\+U\+I@{On\+G\+U\+I}}
+\index{On\+G\+U\+I@{On\+G\+U\+I}!Music@{Music}}
+\subsubsection[{On\+G\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+On\+G\+U\+I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_music_a034233438c74e4b0d6f1fecf5de6cacb}
+
+
+Dessine la fenetre graphique 
+
+\hypertarget{class_music_a09593624eba620da5d6cbb09d6e2e845}{}\index{Music@{Music}!play\+Sound\+With\+Movement@{play\+Sound\+With\+Movement}}
+\index{play\+Sound\+With\+Movement@{play\+Sound\+With\+Movement}!Music@{Music}}
+\subsubsection[{play\+Sound\+With\+Movement}]{\setlength{\rightskip}{0pt plus 5cm}bool Music.\+play\+Sound\+With\+Movement (
+\begin{DoxyParamCaption}
+\item[{String}]{son}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_music_a09593624eba620da5d6cbb09d6e2e845}
+\hypertarget{class_music_afcef8e50a31bccf2cb425cfa851322d5}{}\index{Music@{Music}!Replace@{Replace}}
+\index{Replace@{Replace}!Music@{Music}}
+\subsubsection[{Replace}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Replace (
+\begin{DoxyParamCaption}
+\item[{int}]{select}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_music_afcef8e50a31bccf2cb425cfa851322d5}
+
+
+Re-\/positionne les boucles après une suppression. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em select} & Numéro de la boucle qui a été supprimée.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_music_a88677b5b17d7881742cf8d0e23ac8207}{}\index{Music@{Music}!Start@{Start}}
+\index{Start@{Start}!Music@{Music}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_music_a88677b5b17d7881742cf8d0e23ac8207}
+\hypertarget{class_music_acb4d0b5d2b535f89fd14f1886baab776}{}\index{Music@{Music}!unable\+Press\+Key@{unable\+Press\+Key}}
+\index{unable\+Press\+Key@{unable\+Press\+Key}!Music@{Music}}
+\subsubsection[{unable\+Press\+Key}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+unable\+Press\+Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_music_acb4d0b5d2b535f89fd14f1886baab776}
+
+
+Cette fonction permet d\textquotesingle{}empecher l\textquotesingle{}appuie sur une touche de la wii pendant un temps \textquotesingle{}pressable\+Time\textquotesingle{} afin de ne pas ajouter un son à chaque update si on reste appuyer sur un bouton de la Wii Remote. 
+
+\hypertarget{class_music_a25d6adb92e3f3b05b996537d467a29f2}{}\index{Music@{Music}!Update\+Array@{Update\+Array}}
+\index{Update\+Array@{Update\+Array}!Music@{Music}}
+\subsubsection[{Update\+Array}]{\setlength{\rightskip}{0pt plus 5cm}void Music.\+Update\+Array (
+\begin{DoxyParamCaption}
+\item[{int}]{index = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_music_a25d6adb92e3f3b05b996537d467a29f2}
+
+
+Met à jour la liste des boucles. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em index} & Permet de choisir entre l\textquotesingle{}ajout et la suppression d\textquotesingle{}une boucle.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_music_a40595d7c6af2acb00fb2bb7841cb5f67}{}\index{Music@{Music}!wiimote\+\_\+count@{wiimote\+\_\+count}}
+\index{wiimote\+\_\+count@{wiimote\+\_\+count}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}static int Music.\+wiimote\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a40595d7c6af2acb00fb2bb7841cb5f67}
+\hypertarget{class_music_aee0db5bd6d8dcda6638368322eee4c85}{}\index{Music@{Music}!wiimote\+\_\+get\+Acc\+X@{wiimote\+\_\+get\+Acc\+X}}
+\index{wiimote\+\_\+get\+Acc\+X@{wiimote\+\_\+get\+Acc\+X}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Acc\+X}]{\setlength{\rightskip}{0pt plus 5cm}static byte Music.\+wiimote\+\_\+get\+Acc\+X (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_aee0db5bd6d8dcda6638368322eee4c85}
+\hypertarget{class_music_a3a575f1623e1d8f08f9ef6a0fa3c0971}{}\index{Music@{Music}!wiimote\+\_\+get\+Acc\+Y@{wiimote\+\_\+get\+Acc\+Y}}
+\index{wiimote\+\_\+get\+Acc\+Y@{wiimote\+\_\+get\+Acc\+Y}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Acc\+Y}]{\setlength{\rightskip}{0pt plus 5cm}static byte Music.\+wiimote\+\_\+get\+Acc\+Y (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a3a575f1623e1d8f08f9ef6a0fa3c0971}
+\hypertarget{class_music_a98817ef086d8628dbefb97c6dcc16784}{}\index{Music@{Music}!wiimote\+\_\+get\+Acc\+Z@{wiimote\+\_\+get\+Acc\+Z}}
+\index{wiimote\+\_\+get\+Acc\+Z@{wiimote\+\_\+get\+Acc\+Z}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Acc\+Z}]{\setlength{\rightskip}{0pt plus 5cm}static byte Music.\+wiimote\+\_\+get\+Acc\+Z (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a98817ef086d8628dbefb97c6dcc16784}
+\hypertarget{class_music_a835f4686d6c9f04048ac82846d80c68d}{}\index{Music@{Music}!wiimote\+\_\+get\+Button1@{wiimote\+\_\+get\+Button1}}
+\index{wiimote\+\_\+get\+Button1@{wiimote\+\_\+get\+Button1}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button1}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button1 (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a835f4686d6c9f04048ac82846d80c68d}
+\hypertarget{class_music_a159e2b41593b313b806b1fa75855a3b1}{}\index{Music@{Music}!wiimote\+\_\+get\+Button2@{wiimote\+\_\+get\+Button2}}
+\index{wiimote\+\_\+get\+Button2@{wiimote\+\_\+get\+Button2}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button2}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button2 (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a159e2b41593b313b806b1fa75855a3b1}
+\hypertarget{class_music_a0da54a9b72517be2ef96b56817730de4}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+A@{wiimote\+\_\+get\+Button\+A}}
+\index{wiimote\+\_\+get\+Button\+A@{wiimote\+\_\+get\+Button\+A}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+A}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+A (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a0da54a9b72517be2ef96b56817730de4}
+\hypertarget{class_music_afa8c29f119c92db2e15df93fadb11008}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+B@{wiimote\+\_\+get\+Button\+B}}
+\index{wiimote\+\_\+get\+Button\+B@{wiimote\+\_\+get\+Button\+B}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+B}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+B (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_afa8c29f119c92db2e15df93fadb11008}
+\hypertarget{class_music_a7c5e9399a60e57bebf5c2e18b54ef499}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+Down@{wiimote\+\_\+get\+Button\+Down}}
+\index{wiimote\+\_\+get\+Button\+Down@{wiimote\+\_\+get\+Button\+Down}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+Down}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+Down (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a7c5e9399a60e57bebf5c2e18b54ef499}
+\hypertarget{class_music_a24b68dad0f9ae028714d3106c748eda4}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+Home@{wiimote\+\_\+get\+Button\+Home}}
+\index{wiimote\+\_\+get\+Button\+Home@{wiimote\+\_\+get\+Button\+Home}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+Home}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+Home (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a24b68dad0f9ae028714d3106c748eda4}
+\hypertarget{class_music_a2684a38f892873250a4b720434c1a548}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+Left@{wiimote\+\_\+get\+Button\+Left}}
+\index{wiimote\+\_\+get\+Button\+Left@{wiimote\+\_\+get\+Button\+Left}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+Left}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+Left (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a2684a38f892873250a4b720434c1a548}
+\hypertarget{class_music_a86a3c5ae8040d1c655a595ca23c61c33}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+Minus@{wiimote\+\_\+get\+Button\+Minus}}
+\index{wiimote\+\_\+get\+Button\+Minus@{wiimote\+\_\+get\+Button\+Minus}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+Minus}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+Minus (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a86a3c5ae8040d1c655a595ca23c61c33}
+\hypertarget{class_music_afdd08708b534b7010afccc75124d8046}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+Plus@{wiimote\+\_\+get\+Button\+Plus}}
+\index{wiimote\+\_\+get\+Button\+Plus@{wiimote\+\_\+get\+Button\+Plus}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+Plus}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+Plus (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_afdd08708b534b7010afccc75124d8046}
+\hypertarget{class_music_a4d3a8be82426aede2dcb42cd2618e93d}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+Right@{wiimote\+\_\+get\+Button\+Right}}
+\index{wiimote\+\_\+get\+Button\+Right@{wiimote\+\_\+get\+Button\+Right}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+Right}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+Right (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a4d3a8be82426aede2dcb42cd2618e93d}
+\hypertarget{class_music_abe16123b93a805449f5125f3a461c704}{}\index{Music@{Music}!wiimote\+\_\+get\+Button\+Up@{wiimote\+\_\+get\+Button\+Up}}
+\index{wiimote\+\_\+get\+Button\+Up@{wiimote\+\_\+get\+Button\+Up}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Button\+Up}]{\setlength{\rightskip}{0pt plus 5cm}static bool Music.\+wiimote\+\_\+get\+Button\+Up (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_abe16123b93a805449f5125f3a461c704}
+\hypertarget{class_music_ab6d783cc9a08de26e36401ecefd0169f}{}\index{Music@{Music}!wiimote\+\_\+get\+Pitch@{wiimote\+\_\+get\+Pitch}}
+\index{wiimote\+\_\+get\+Pitch@{wiimote\+\_\+get\+Pitch}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Pitch}]{\setlength{\rightskip}{0pt plus 5cm}static float Music.\+wiimote\+\_\+get\+Pitch (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_ab6d783cc9a08de26e36401ecefd0169f}
+\hypertarget{class_music_acb804430cb256e5eed4c2f25e9792241}{}\index{Music@{Music}!wiimote\+\_\+get\+Roll@{wiimote\+\_\+get\+Roll}}
+\index{wiimote\+\_\+get\+Roll@{wiimote\+\_\+get\+Roll}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Roll}]{\setlength{\rightskip}{0pt plus 5cm}static float Music.\+wiimote\+\_\+get\+Roll (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_acb804430cb256e5eed4c2f25e9792241}
+\hypertarget{class_music_a8671f54d1c3d75b602c79e6b39c9707a}{}\index{Music@{Music}!wiimote\+\_\+get\+Yaw@{wiimote\+\_\+get\+Yaw}}
+\index{wiimote\+\_\+get\+Yaw@{wiimote\+\_\+get\+Yaw}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+get\+Yaw}]{\setlength{\rightskip}{0pt plus 5cm}static float Music.\+wiimote\+\_\+get\+Yaw (
+\begin{DoxyParamCaption}
+\item[{int}]{which}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a8671f54d1c3d75b602c79e6b39c9707a}
+\hypertarget{class_music_a69b2158924c1cf3b72d8ad0aa31169b6}{}\index{Music@{Music}!wiimote\+\_\+start@{wiimote\+\_\+start}}
+\index{wiimote\+\_\+start@{wiimote\+\_\+start}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}static void Music.\+wiimote\+\_\+start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a69b2158924c1cf3b72d8ad0aa31169b6}
+\hypertarget{class_music_ad87bc9d22b95c82090707ddc53ed5da8}{}\index{Music@{Music}!wiimote\+\_\+stop@{wiimote\+\_\+stop}}
+\index{wiimote\+\_\+stop@{wiimote\+\_\+stop}!Music@{Music}}
+\subsubsection[{wiimote\+\_\+stop}]{\setlength{\rightskip}{0pt plus 5cm}static void Music.\+wiimote\+\_\+stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_ad87bc9d22b95c82090707ddc53ed5da8}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_music_ab653d0747a20992b8f891361ff75c2fc}{}\index{Music@{Music}!A@{A}}
+\index{A@{A}!Music@{Music}}
+\subsubsection[{A}]{\setlength{\rightskip}{0pt plus 5cm}bool Music.\+A\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_ab653d0747a20992b8f891361ff75c2fc}
+\hypertarget{class_music_ad7980e82c9bb7fc27ce15affbc4ef267}{}\index{Music@{Music}!audio\+Source@{audio\+Source}}
+\index{audio\+Source@{audio\+Source}!Music@{Music}}
+\subsubsection[{audio\+Source}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+Source Music.\+audio\+Source}\label{class_music_ad7980e82c9bb7fc27ce15affbc4ef267}
+
+
+Objet \href{http://docs.unity3d.com/ScriptReference/AudioSource.html}{\tt Audio\+Source} qui permet de jouer un son. 
+
+\hypertarget{class_music_a16991bd6f416f0fe945e89d7d480cad6}{}\index{Music@{Music}!B@{B}}
+\index{B@{B}!Music@{Music}}
+\subsubsection[{B}]{\setlength{\rightskip}{0pt plus 5cm}bool Music.\+B\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a16991bd6f416f0fe945e89d7d480cad6}
+\hypertarget{class_music_a32f83f56e3522b34faf524ef322459e7}{}\index{Music@{Music}!bpm@{bpm}}
+\index{bpm@{bpm}!Music@{Music}}
+\subsubsection[{bpm}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+bpm = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a32f83f56e3522b34faf524ef322459e7}
+
+
+Nombre de B\+P\+M (battements par minute). 
+
+\hypertarget{class_music_a207d2cf72a65ec7a1e4ce02e3cfd29b9}{}\index{Music@{Music}!cond\+Inf@{cond\+Inf}}
+\index{cond\+Inf@{cond\+Inf}!Music@{Music}}
+\subsubsection[{cond\+Inf}]{\setlength{\rightskip}{0pt plus 5cm}bool Music.\+cond\+Inf = false\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a207d2cf72a65ec7a1e4ce02e3cfd29b9}
+\hypertarget{class_music_aeeb6f3c67f4b24bb83aaecf68075f51b}{}\index{Music@{Music}!cond\+Sup@{cond\+Sup}}
+\index{cond\+Sup@{cond\+Sup}!Music@{Music}}
+\subsubsection[{cond\+Sup}]{\setlength{\rightskip}{0pt plus 5cm}bool Music.\+cond\+Sup = false\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_aeeb6f3c67f4b24bb83aaecf68075f51b}
+\hypertarget{class_music_ae4014f55d10343673bbf00004ebaaf31}{}\index{Music@{Music}!duration\+Time@{duration\+Time}}
+\index{duration\+Time@{duration\+Time}!Music@{Music}}
+\subsubsection[{duration\+Time}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+duration\+Time\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_ae4014f55d10343673bbf00004ebaaf31}
+
+
+Durée de la boucle qui va être créée. 
+
+\hypertarget{class_music_a6525acdf11a00376a98d5178ab822886}{}\index{Music@{Music}!is\+Pressable@{is\+Pressable}}
+\index{is\+Pressable@{is\+Pressable}!Music@{Music}}
+\subsubsection[{is\+Pressable}]{\setlength{\rightskip}{0pt plus 5cm}bool Music.\+is\+Pressable = true\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a6525acdf11a00376a98d5178ab822886}
+\hypertarget{class_music_a1507118c48dd86cf0cc02e35e9a878d2}{}\index{Music@{Music}!line@{line}}
+\index{line@{line}!Music@{Music}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Object Music.\+line\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a1507118c48dd86cf0cc02e35e9a878d2}
+
+
+La ligne. 
+
+\hypertarget{class_music_ad8b992250bd9ff84988adc7c0091c321}{}\index{Music@{Music}!loop@{loop}}
+\index{loop@{loop}!Music@{Music}}
+\subsubsection[{loop}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Object Music.\+loop\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_ad8b992250bd9ff84988adc7c0091c321}
+
+
+Le cylindre. 
+
+\hypertarget{class_music_a89ea80578a05f37ffefe4f83d6be0425}{}\index{Music@{Music}!loop\+Number@{loop\+Number}}
+\index{loop\+Number@{loop\+Number}!Music@{Music}}
+\subsubsection[{loop\+Number}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+loop\+Number = 0\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a89ea80578a05f37ffefe4f83d6be0425}
+
+
+Numéro de la boucle qui va être créée. 
+
+\hypertarget{class_music_ac34fdcf5a15ce705117105b68a72974d}{}\index{Music@{Music}!loops@{loops}}
+\index{loops@{loops}!Music@{Music}}
+\subsubsection[{loops}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Game\+Object$>$ Music.\+loops = new List$<$Game\+Object$>$()}\label{class_music_ac34fdcf5a15ce705117105b68a72974d}
+
+
+Liste des boucles. 
+
+\hypertarget{class_music_a314e1e14f9b0f2fc88672df0a54ceda2}{}\index{Music@{Music}!loop\+Selected@{loop\+Selected}}
+\index{loop\+Selected@{loop\+Selected}!Music@{Music}}
+\subsubsection[{loop\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+loop\+Selected = -\/1\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a314e1e14f9b0f2fc88672df0a54ceda2}
+
+
+Boucle selectionnée (en jaune). 
+
+\hypertarget{class_music_adf436d51d0b5be109beae967b4d34522}{}\index{Music@{Music}!mesure@{mesure}}
+\index{mesure@{mesure}!Music@{Music}}
+\subsubsection[{mesure}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+mesure = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_adf436d51d0b5be109beae967b4d34522}
+
+
+Nombre de mesure. 
+
+\hypertarget{class_music_a4d9b6dba41b560393edf85a675e8a84f}{}\index{Music@{Music}!nb\+Of\+Wiimote@{nb\+Of\+Wiimote}}
+\index{nb\+Of\+Wiimote@{nb\+Of\+Wiimote}!Music@{Music}}
+\subsubsection[{nb\+Of\+Wiimote}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+nb\+Of\+Wiimote = 0\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a4d9b6dba41b560393edf85a675e8a84f}
+\hypertarget{class_music_ac4412a8635c49f90692e3683931c0343}{}\index{Music@{Music}!neutre@{neutre}}
+\index{neutre@{neutre}!Music@{Music}}
+\subsubsection[{neutre}]{\setlength{\rightskip}{0pt plus 5cm}Material Music.\+neutre\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_ac4412a8635c49f90692e3683931c0343}
+
+
+Définition du matériau Neutre. 
+
+\hypertarget{class_music_a8811033babcd7646e477060f69d578e6}{}\index{Music@{Music}!P@{P}}
+\index{P@{P}!Music@{Music}}
+\subsubsection[{P}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+P\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a8811033babcd7646e477060f69d578e6}
+\hypertarget{class_music_a8dee10ad61d1260dc55195c7a7c50d7c}{}\index{Music@{Music}!pos\+Line@{pos\+Line}}
+\index{pos\+Line@{pos\+Line}!Music@{Music}}
+\subsubsection[{pos\+Line}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 Music.\+pos\+Line\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a8dee10ad61d1260dc55195c7a7c50d7c}
+
+
+Position de la ligne. 
+
+\hypertarget{class_music_a23d19ec4b266573443920e3dacc9bd93}{}\index{Music@{Music}!predef@{predef}}
+\index{predef@{predef}!Music@{Music}}
+\subsubsection[{predef}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Predef} Music.\+predef\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a23d19ec4b266573443920e3dacc9bd93}
+
+
+Instance de \hyperlink{class_predef}{Predef} qui sert à accéder aux boucles prédéfinies. 
+
+\hypertarget{class_music_a2c0e87848bf12c5f29e62f22556f0bb0}{}\index{Music@{Music}!pressable\+Time@{pressable\+Time}}
+\index{pressable\+Time@{pressable\+Time}!Music@{Music}}
+\subsubsection[{pressable\+Time}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+pressable\+Time = 20}\label{class_music_a2c0e87848bf12c5f29e62f22556f0bb0}
+\hypertarget{class_music_a2008a64ad37c7a232a8c206d7acdbd0f}{}\index{Music@{Music}!R@{R}}
+\index{R@{R}!Music@{Music}}
+\subsubsection[{R}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+R\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a2008a64ad37c7a232a8c206d7acdbd0f}
+\hypertarget{class_music_acd36d67bfd91798211295d45ef911c34}{}\index{Music@{Music}!W@{W}}
+\index{W@{W}!Music@{Music}}
+\subsubsection[{W}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+W\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_acd36d67bfd91798211295d45ef911c34}
+\hypertarget{class_music_a937e074ddcaba7ed3666cf872c94d97f}{}\index{Music@{Music}!wii\+\_\+display@{wii\+\_\+display}}
+\index{wii\+\_\+display@{wii\+\_\+display}!Music@{Music}}
+\subsubsection[{wii\+\_\+display}]{\setlength{\rightskip}{0pt plus 5cm}String Music.\+wii\+\_\+display\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_a937e074ddcaba7ed3666cf872c94d97f}
+\hypertarget{class_music_acb9bb6d52e75b11d305be2a2ae180cb5}{}\index{Music@{Music}!X@{X}}
+\index{X@{X}!Music@{Music}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+X\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_acb9bb6d52e75b11d305be2a2ae180cb5}
+\hypertarget{class_music_af45a2d376fdee07df8fc263f17e940b5}{}\index{Music@{Music}!Y@{Y}}
+\index{Y@{Y}!Music@{Music}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_af45a2d376fdee07df8fc263f17e940b5}
+\hypertarget{class_music_acf7deb58e516a37db39d3c9883d6034e}{}\index{Music@{Music}!yellow@{yellow}}
+\index{yellow@{yellow}!Music@{Music}}
+\subsubsection[{yellow}]{\setlength{\rightskip}{0pt plus 5cm}Material Music.\+yellow\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_acf7deb58e516a37db39d3c9883d6034e}
+
+
+Définition du matériau Jaune. 
+
+\hypertarget{class_music_ac55cf30eb31695f3b6ec7ace7a8abb19}{}\index{Music@{Music}!Z@{Z}}
+\index{Z@{Z}!Music@{Music}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+Z\hspace{0.3cm}{\ttfamily [private]}}\label{class_music_ac55cf30eb31695f3b6ec7ace7a8abb19}
+
+
+\subsection{Documentation des propriétés}
+\hypertarget{class_music_a215cbe531ec3578d7c5a06305b7e7873}{}\index{Music@{Music}!Bpm@{Bpm}}
+\index{Bpm@{Bpm}!Music@{Music}}
+\subsubsection[{Bpm}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+Bpm\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_music_a215cbe531ec3578d7c5a06305b7e7873}
+\hypertarget{class_music_a20bb244d5d40d5848201077b577b0111}{}\index{Music@{Music}!Duration\+Time@{Duration\+Time}}
+\index{Duration\+Time@{Duration\+Time}!Music@{Music}}
+\subsubsection[{Duration\+Time}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+Duration\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_music_a20bb244d5d40d5848201077b577b0111}
+\hypertarget{class_music_a08b2e446def0d17e713d4f723811b3be}{}\index{Music@{Music}!Loop\+Selected@{Loop\+Selected}}
+\index{Loop\+Selected@{Loop\+Selected}!Music@{Music}}
+\subsubsection[{Loop\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}int Music.\+Loop\+Selected\hspace{0.3cm}{\ttfamily [get]}}\label{class_music_a08b2e446def0d17e713d4f723811b3be}
+\hypertarget{class_music_a84523fd3eb5ec2fa076d69dd0fd18373}{}\index{Music@{Music}!Mesure@{Mesure}}
+\index{Mesure@{Mesure}!Music@{Music}}
+\subsubsection[{Mesure}]{\setlength{\rightskip}{0pt plus 5cm}float Music.\+Mesure\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_music_a84523fd3eb5ec2fa076d69dd0fd18373}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+/\+Volumes/\+C\+L\+E R\+O\+B\+I\+N/projet-\/rythmique/\+Projet-\/rythmique/\+Assets/\+Scripts/\hyperlink{_music_8cs}{Music.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,118 @@
+\hypertarget{class_metronome}{}\section{Référence de la classe Metronome}
+\label{class_metronome}\index{Metronome@{Metronome}}
+
+
+Cette classe permet d\textquotesingle{}instancier un métronome.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_metronome_a0189b04ace6a9f1b5bdb74cb8e3b20bc}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initialisation du métronome. \end{DoxyCompactList}\item 
+void \hyperlink{class_metronome_a1bc290b5b41c27ab776b57214853e05b}{add\+Metronome} (int duree\+Metronome)
+\begin{DoxyCompactList}\small\item\em Ajout des sons des sons du métronome. \end{DoxyCompactList}\item 
+void \hyperlink{class_metronome_a51f41efee7a5e051c3a4c726f28149eb}{add\+Metronome\+Spheres} ()
+\begin{DoxyCompactList}\small\item\em Ajout des sphères représentants les sons du métronome. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_music}{Music} \hyperlink{class_metronome_a9434e9e563d5b903c4a800d7529a0c9a}{music}
+\begin{DoxyCompactList}\small\item\em Objet \hyperlink{class_music}{Music} qui permet d\textquotesingle{}ajouter une boucle à la liste de boucle ainsi que des sons à cette liste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_metronome_a2f04bf014bd373f690a955cce3298116}{Metronome\+Spheres}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_metronome_a3c3597941b45ceaebbe3b7f3b1a89faf}{metronome\+Spheres} = false
+\begin{DoxyCompactList}\small\item\em Pour indiquer si toutes les sphères associées au métronome ont été dessinnes. \end{DoxyCompactList}\item 
+int \hyperlink{class_metronome_a7e536279ddfa76b2aa0b77112ec0dd38}{metronome\+Spheres\+Count} = 0
+\begin{DoxyCompactList}\small\item\em Nombre de sphères associées au métr. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Cette classe permet d\textquotesingle{}instancier un métronome. 
+
+
+
+Est dérivée de Mono\+Behaviour.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_metronome_a1bc290b5b41c27ab776b57214853e05b}{}\index{Metronome@{Metronome}!add\+Metronome@{add\+Metronome}}
+\index{add\+Metronome@{add\+Metronome}!Metronome@{Metronome}}
+\subsubsection[{add\+Metronome}]{\setlength{\rightskip}{0pt plus 5cm}void Metronome.\+add\+Metronome (
+\begin{DoxyParamCaption}
+\item[{int}]{duree\+Metronome}
+\end{DoxyParamCaption}
+)}\label{class_metronome_a1bc290b5b41c27ab776b57214853e05b}
+
+
+Ajout des sons des sons du métronome. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em duree\+Metronome} & Durée du métronome (en secondes).\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_metronome_a51f41efee7a5e051c3a4c726f28149eb}{}\index{Metronome@{Metronome}!add\+Metronome\+Spheres@{add\+Metronome\+Spheres}}
+\index{add\+Metronome\+Spheres@{add\+Metronome\+Spheres}!Metronome@{Metronome}}
+\subsubsection[{add\+Metronome\+Spheres}]{\setlength{\rightskip}{0pt plus 5cm}void Metronome.\+add\+Metronome\+Spheres (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_metronome_a51f41efee7a5e051c3a4c726f28149eb}
+
+
+Ajout des sphères représentants les sons du métronome. 
+
+\hypertarget{class_metronome_a0189b04ace6a9f1b5bdb74cb8e3b20bc}{}\index{Metronome@{Metronome}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Metronome@{Metronome}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Metronome.\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_metronome_a0189b04ace6a9f1b5bdb74cb8e3b20bc}
+
+
+Initialisation du métronome. 
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_metronome_a3c3597941b45ceaebbe3b7f3b1a89faf}{}\index{Metronome@{Metronome}!metronome\+Spheres@{metronome\+Spheres}}
+\index{metronome\+Spheres@{metronome\+Spheres}!Metronome@{Metronome}}
+\subsubsection[{metronome\+Spheres}]{\setlength{\rightskip}{0pt plus 5cm}bool Metronome.\+metronome\+Spheres = false\hspace{0.3cm}{\ttfamily [private]}}\label{class_metronome_a3c3597941b45ceaebbe3b7f3b1a89faf}
+
+
+Pour indiquer si toutes les sphères associées au métronome ont été dessinnes. 
+
+\hypertarget{class_metronome_a7e536279ddfa76b2aa0b77112ec0dd38}{}\index{Metronome@{Metronome}!metronome\+Spheres\+Count@{metronome\+Spheres\+Count}}
+\index{metronome\+Spheres\+Count@{metronome\+Spheres\+Count}!Metronome@{Metronome}}
+\subsubsection[{metronome\+Spheres\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int Metronome.\+metronome\+Spheres\+Count = 0\hspace{0.3cm}{\ttfamily [private]}}\label{class_metronome_a7e536279ddfa76b2aa0b77112ec0dd38}
+
+
+Nombre de sphères associées au métr. 
+
+\hypertarget{class_metronome_a9434e9e563d5b903c4a800d7529a0c9a}{}\index{Metronome@{Metronome}!music@{music}}
+\index{music@{music}!Metronome@{Metronome}}
+\subsubsection[{music}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Music} Metronome.\+music}\label{class_metronome_a9434e9e563d5b903c4a800d7529a0c9a}
+
+
+Objet \hyperlink{class_music}{Music} qui permet d\textquotesingle{}ajouter une boucle à la liste de boucle ainsi que des sons à cette liste. 
+
+
+
+\subsection{Documentation des propriétés}
+\hypertarget{class_metronome_a2f04bf014bd373f690a955cce3298116}{}\index{Metronome@{Metronome}!Metronome\+Spheres@{Metronome\+Spheres}}
+\index{Metronome\+Spheres@{Metronome\+Spheres}!Metronome@{Metronome}}
+\subsubsection[{Metronome\+Spheres}]{\setlength{\rightskip}{0pt plus 5cm}bool Metronome.\+Metronome\+Spheres\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_metronome_a2f04bf014bd373f690a955cce3298116}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/robin/\+Google Drive/\+Travail/\+S9/\+P\+R\+I/projet rythmique github/projet-\/unity/projet-\/rythmique/\+Projet-\/rythmique/\+Assets/\+Scripts/\hyperlink{_metronome_8cs}{Metronome.\+cs}\end{DoxyCompactItemize}

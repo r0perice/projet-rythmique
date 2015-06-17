@@ -1,0 +1,13 @@
+digraph "/Users/robin/Google Drive/Travail" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_de7ae8eb4e670d4d9c6d488a05cb9523 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Google Drive" fontname="Helvetica", fontsize="10", URL="dir_de7ae8eb4e670d4d9c6d488a05cb9523.html"]
+  subgraph clusterdir_74881feed1062dc67fe816c5e925d811 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_74881feed1062dc67fe816c5e925d811.html"];
+    dir_74881feed1062dc67fe816c5e925d811 [shape=plaintext label="Travail"];
+    dir_ff699ce3662cefb8b2924e539db22bfd [shape=box label="S9" color="red" fillcolor="white" style="filled" URL="dir_ff699ce3662cefb8b2924e539db22bfd.html"];
+  }
+  }
+}

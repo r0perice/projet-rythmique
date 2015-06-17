@@ -1,0 +1,284 @@
+\hypertarget{class_loop}{}\section{Référence de la classe Loop}
+\label{class_loop}\index{Loop@{Loop}}
+
+
+Cette classe permet de définir une boucle qui pourra contenir des sons.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_loop_a3a228a27bd11fd29c62845024654e68b}{play\+Sound} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui parcourt la liste des sons pour les jouer. \end{DoxyCompactList}\item 
+float \hyperlink{class_loop_ac69e73a7f3b87ecdc51e3840505b6599}{Adjust\+Sound} (Game\+Object sph)
+\begin{DoxyCompactList}\small\item\em Ajustement d\textquotesingle{}un son avec un autre son proche. \end{DoxyCompactList}\item 
+void \hyperlink{class_loop_a728f506b8fb86bd3cc1701f8cd42b403}{Add\+Sound} (string title, float time=-\/1, float delay=0.\+0f)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}un son à une boucle. \end{DoxyCompactList}\item 
+void \hyperlink{class_loop_afe51ea74b1e2bb59e3c22be8247134be}{Add\+Color} (string title, Game\+Object go)
+\begin{DoxyCompactList}\small\item\em Ajoute les couleurs./// \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Game\+Object $>$ \hyperlink{class_loop_a49058954a754656c000691d0ea34d332}{spheres} = new List$<$Game\+Object$>$()
+\begin{DoxyCompactList}\small\item\em Liste des sons de la boucle. \end{DoxyCompactList}\item 
+List$<$ Audio\+Clip $>$ \hyperlink{class_loop_a900e93bdf5d703ce8bf4f12fa754e022}{clips} = new List$<$Audio\+Clip$>$()
+\begin{DoxyCompactList}\small\item\em Liste des clips dans la boucle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_loop_a50eeceb1774c7d9bb78f0b1c545010d2}{Loop\+Duration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_loop_a9eeb1aa2e5cb39a0f3051b7dc8fc4fc2}{Awake} ()
+\begin{DoxyCompactList}\small\item\em Awake this instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_loop_ae9848ead9ef01735696c2d954c1356ef}{Fixed\+Update} ()
+\begin{DoxyCompactList}\small\item\em Fixeds the update. Utilise la fonction Play\+Soud pour jouer les sons. Calcul le temps actuel de la boucle (loop\+Time). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Clip\mbox{[}$\,$\mbox{]} \hyperlink{class_loop_a1dfc5163d00ce897737c2a9bb95d72c3}{clip\+Array}
+\begin{DoxyCompactList}\small\item\em Tableau contenant les audio\+Clips. \end{DoxyCompactList}\item 
+float \hyperlink{class_loop_a5b85a1c3af3975aab929058d084929f0}{loop\+Duration}
+\begin{DoxyCompactList}\small\item\em Durée de la boucle. \end{DoxyCompactList}\item 
+float \hyperlink{class_loop_ab6f3df1dceea6e92a1728d8ad3558f4b}{loop\+Time} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Temps courant de la boucle. \end{DoxyCompactList}\item 
+float \hyperlink{class_loop_a483ac8b940665a7661559d82b9f8b3e5}{ratio}
+\begin{DoxyCompactList}\small\item\em Rapport calculé pour avoir des secondes dans Unity. \end{DoxyCompactList}\item 
+double \hyperlink{class_loop_a1e9897b50db8948891a1af99c7f354ca}{accuracy} = 5.\+0f
+\item 
+float \hyperlink{class_loop_a0db6a9a6439342876ec7eee9acf3a4bd}{marge} = 0.\+010f
+\begin{DoxyCompactList}\small\item\em Marge défini pour l\textquotesingle{}ajustement des sons. \end{DoxyCompactList}\item 
+Material \hyperlink{class_loop_ad2d1665b1488b64a26f42ed2ab7dc83a}{black}
+\begin{DoxyCompactList}\small\item\em Définition du matériau Noir. \end{DoxyCompactList}\item 
+Material \hyperlink{class_loop_abdff42bcd7fd2129d096263de28962ba}{blue}
+\begin{DoxyCompactList}\small\item\em Définition du matériau Bleu. \end{DoxyCompactList}\item 
+Material \hyperlink{class_loop_a081f72cca998dd79be5dfd7e27b126f4}{red}
+\begin{DoxyCompactList}\small\item\em Définition du matériau Rouge. \end{DoxyCompactList}\item 
+Material \hyperlink{class_loop_ad073115a8a8c600f326b875b2f8b6d35}{green}
+\begin{DoxyCompactList}\small\item\em Définition du matériau Vert. \end{DoxyCompactList}\item 
+Material \hyperlink{class_loop_ae76c0e46e59d56e3b602d597bceae38e}{neutre}
+\begin{DoxyCompactList}\small\item\em Définition du matériau Neutre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Cette classe permet de définir une boucle qui pourra contenir des sons. 
+
+
+
+Est dérivée de Mono\+Behaviour.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_loop_afe51ea74b1e2bb59e3c22be8247134be}{}\index{Loop@{Loop}!Add\+Color@{Add\+Color}}
+\index{Add\+Color@{Add\+Color}!Loop@{Loop}}
+\subsubsection[{Add\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void Loop.\+Add\+Color (
+\begin{DoxyParamCaption}
+\item[{string}]{title, }
+\item[{Game\+Object}]{go}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_loop_afe51ea74b1e2bb59e3c22be8247134be}
+
+
+Ajoute les couleurs./// 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em title} & Titre du son.\\
+\hline
+{\em go} & Game\+Object associé au son, qui recevra la couleur.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_loop_a728f506b8fb86bd3cc1701f8cd42b403}{}\index{Loop@{Loop}!Add\+Sound@{Add\+Sound}}
+\index{Add\+Sound@{Add\+Sound}!Loop@{Loop}}
+\subsubsection[{Add\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}void Loop.\+Add\+Sound (
+\begin{DoxyParamCaption}
+\item[{string}]{title, }
+\item[{float}]{time = {\ttfamily -\/1}, }
+\item[{float}]{delay = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_loop_a728f506b8fb86bd3cc1701f8cd42b403}
+
+
+Ajout d\textquotesingle{}un son à une boucle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em title} & Titre de l\textquotesingle{}Audio\+Clip à ajouter à la boucle.\\
+\hline
+{\em time} & Paramètre à fournir pour ajouter un son à un temps voulu.\\
+\hline
+{\em delay} & Décalage entre l\textquotesingle{}appui d\textquotesingle{}une touche et l\textquotesingle{}ajout d\textquotesingle{}un son.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_loop_ac69e73a7f3b87ecdc51e3840505b6599}{}\index{Loop@{Loop}!Adjust\+Sound@{Adjust\+Sound}}
+\index{Adjust\+Sound@{Adjust\+Sound}!Loop@{Loop}}
+\subsubsection[{Adjust\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+Adjust\+Sound (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{sph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_loop_ac69e73a7f3b87ecdc51e3840505b6599}
+
+
+Ajustement d\textquotesingle{}un son avec un autre son proche. 
+
+\begin{DoxyReturn}{Renvoie}
+Retourne le temps ajusté (moyenne des deux sons proches).
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em sph} & Utilisation du game\+Object contenant le son à ajuster.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bogue}
+\item[\hyperlink{bug__bug000001}{Bogue}]Si on veut ajuster un son qui se trouve en fin de boucle alors l\textquotesingle{}ajustement ne va pas se faire en fin de boucle mais au milieu... ~\newline
+ Explications \+:\end{DoxyRefDesc}
+\begin{DoxyVerb}La boucle fait 5s:                                                                      |----------|
+Un son est présent en fin de boucle :                                                   |---------S|
+On ajuste avec un nouveau mais le temps que l'on appui il se situe en début de boucle : |S--------S|
+Le nouveau son ajusté va se trouver en milieu de boucle :                               |----S-----|
+\end{DoxyVerb}
+
+
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000001}{A faire}]Si le son à ajuster présent dans la liste est trop près de la fin de la boucle alors on ajuste en fin de boucle.\end{DoxyRefDesc}
+
+
+Idée de code \+:
+
+if ((Sspheres.\+Time+marge$>$loop\+Duration $\vert$$\vert$ Ssphere.\+Time+marge$>$loop\+Duration) \&\& (Sspheres.\+Time$<$loop\+Duration/2.\+0f $\vert$$\vert$ Ssphere.\+Time$<$loop\+Duration/2.\+0f) )\{ adjusted\+Time = ((Sspheres.\+Time+\+Ssphere.Time)-\/loop\+Duration)/2.0f; Destroy(spheres\mbox{[}i\mbox{]});\hypertarget{class_loop_a9eeb1aa2e5cb39a0f3051b7dc8fc4fc2}{}\index{Loop@{Loop}!Awake@{Awake}}
+\index{Awake@{Awake}!Loop@{Loop}}
+\subsubsection[{Awake}]{\setlength{\rightskip}{0pt plus 5cm}void Loop.\+Awake (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_loop_a9eeb1aa2e5cb39a0f3051b7dc8fc4fc2}
+
+
+Awake this instance. 
+
+V\+E\+R\+I\+F\+I\+E\+R L\textquotesingle{}U\+T\+I\+L\+I\+T\+E D\+U R\+A\+T\+I\+O. \hypertarget{class_loop_ae9848ead9ef01735696c2d954c1356ef}{}\index{Loop@{Loop}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Loop@{Loop}}
+\subsubsection[{Fixed\+Update}]{\setlength{\rightskip}{0pt plus 5cm}void Loop.\+Fixed\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_loop_ae9848ead9ef01735696c2d954c1356ef}
+
+
+Fixeds the update. Utilise la fonction Play\+Soud pour jouer les sons. Calcul le temps actuel de la boucle (loop\+Time). 
+
+\hypertarget{class_loop_a3a228a27bd11fd29c62845024654e68b}{}\index{Loop@{Loop}!play\+Sound@{play\+Sound}}
+\index{play\+Sound@{play\+Sound}!Loop@{Loop}}
+\subsubsection[{play\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}void Loop.\+play\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_loop_a3a228a27bd11fd29c62845024654e68b}
+
+
+Fonction qui parcourt la liste des sons pour les jouer. 
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_loop_a1e9897b50db8948891a1af99c7f354ca}{}\index{Loop@{Loop}!accuracy@{accuracy}}
+\index{accuracy@{accuracy}!Loop@{Loop}}
+\subsubsection[{accuracy}]{\setlength{\rightskip}{0pt plus 5cm}double Loop.\+accuracy = 5.\+0f\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a1e9897b50db8948891a1af99c7f354ca}
+\hypertarget{class_loop_ad2d1665b1488b64a26f42ed2ab7dc83a}{}\index{Loop@{Loop}!black@{black}}
+\index{black@{black}!Loop@{Loop}}
+\subsubsection[{black}]{\setlength{\rightskip}{0pt plus 5cm}Material Loop.\+black\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_ad2d1665b1488b64a26f42ed2ab7dc83a}
+
+
+Définition du matériau Noir. 
+
+\hypertarget{class_loop_abdff42bcd7fd2129d096263de28962ba}{}\index{Loop@{Loop}!blue@{blue}}
+\index{blue@{blue}!Loop@{Loop}}
+\subsubsection[{blue}]{\setlength{\rightskip}{0pt plus 5cm}Material Loop.\+blue\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_abdff42bcd7fd2129d096263de28962ba}
+
+
+Définition du matériau Bleu. 
+
+\hypertarget{class_loop_a1dfc5163d00ce897737c2a9bb95d72c3}{}\index{Loop@{Loop}!clip\+Array@{clip\+Array}}
+\index{clip\+Array@{clip\+Array}!Loop@{Loop}}
+\subsubsection[{clip\+Array}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+Clip \mbox{[}$\,$\mbox{]} Loop.\+clip\+Array\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a1dfc5163d00ce897737c2a9bb95d72c3}
+
+
+Tableau contenant les audio\+Clips. 
+
+\hypertarget{class_loop_a900e93bdf5d703ce8bf4f12fa754e022}{}\index{Loop@{Loop}!clips@{clips}}
+\index{clips@{clips}!Loop@{Loop}}
+\subsubsection[{clips}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Audio\+Clip$>$ Loop.\+clips = new List$<$Audio\+Clip$>$()}\label{class_loop_a900e93bdf5d703ce8bf4f12fa754e022}
+
+
+Liste des clips dans la boucle. 
+
+\hypertarget{class_loop_ad073115a8a8c600f326b875b2f8b6d35}{}\index{Loop@{Loop}!green@{green}}
+\index{green@{green}!Loop@{Loop}}
+\subsubsection[{green}]{\setlength{\rightskip}{0pt plus 5cm}Material Loop.\+green\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_ad073115a8a8c600f326b875b2f8b6d35}
+
+
+Définition du matériau Vert. 
+
+\hypertarget{class_loop_a5b85a1c3af3975aab929058d084929f0}{}\index{Loop@{Loop}!loop\+Duration@{loop\+Duration}}
+\index{loop\+Duration@{loop\+Duration}!Loop@{Loop}}
+\subsubsection[{loop\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+loop\+Duration\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a5b85a1c3af3975aab929058d084929f0}
+
+
+Durée de la boucle. 
+
+\hypertarget{class_loop_ab6f3df1dceea6e92a1728d8ad3558f4b}{}\index{Loop@{Loop}!loop\+Time@{loop\+Time}}
+\index{loop\+Time@{loop\+Time}!Loop@{Loop}}
+\subsubsection[{loop\+Time}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+loop\+Time = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_ab6f3df1dceea6e92a1728d8ad3558f4b}
+
+
+Temps courant de la boucle. 
+
+\hypertarget{class_loop_a0db6a9a6439342876ec7eee9acf3a4bd}{}\index{Loop@{Loop}!marge@{marge}}
+\index{marge@{marge}!Loop@{Loop}}
+\subsubsection[{marge}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+marge = 0.\+010f\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a0db6a9a6439342876ec7eee9acf3a4bd}
+
+
+Marge défini pour l\textquotesingle{}ajustement des sons. 
+
+\hypertarget{class_loop_ae76c0e46e59d56e3b602d597bceae38e}{}\index{Loop@{Loop}!neutre@{neutre}}
+\index{neutre@{neutre}!Loop@{Loop}}
+\subsubsection[{neutre}]{\setlength{\rightskip}{0pt plus 5cm}Material Loop.\+neutre\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_ae76c0e46e59d56e3b602d597bceae38e}
+
+
+Définition du matériau Neutre. 
+
+\hypertarget{class_loop_a483ac8b940665a7661559d82b9f8b3e5}{}\index{Loop@{Loop}!ratio@{ratio}}
+\index{ratio@{ratio}!Loop@{Loop}}
+\subsubsection[{ratio}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+ratio\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a483ac8b940665a7661559d82b9f8b3e5}
+
+
+Rapport calculé pour avoir des secondes dans Unity. 
+
+\hypertarget{class_loop_a081f72cca998dd79be5dfd7e27b126f4}{}\index{Loop@{Loop}!red@{red}}
+\index{red@{red}!Loop@{Loop}}
+\subsubsection[{red}]{\setlength{\rightskip}{0pt plus 5cm}Material Loop.\+red\hspace{0.3cm}{\ttfamily [private]}}\label{class_loop_a081f72cca998dd79be5dfd7e27b126f4}
+
+
+Définition du matériau Rouge. 
+
+\hypertarget{class_loop_a49058954a754656c000691d0ea34d332}{}\index{Loop@{Loop}!spheres@{spheres}}
+\index{spheres@{spheres}!Loop@{Loop}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Game\+Object$>$ Loop.\+spheres = new List$<$Game\+Object$>$()}\label{class_loop_a49058954a754656c000691d0ea34d332}
+
+
+Liste des sons de la boucle. 
+
+
+
+\subsection{Documentation des propriétés}
+\hypertarget{class_loop_a50eeceb1774c7d9bb78f0b1c545010d2}{}\index{Loop@{Loop}!Loop\+Duration@{Loop\+Duration}}
+\index{Loop\+Duration@{Loop\+Duration}!Loop@{Loop}}
+\subsubsection[{Loop\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}float Loop.\+Loop\+Duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_loop_a50eeceb1774c7d9bb78f0b1c545010d2}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+/\+Volumes/\+C\+L\+E R\+O\+B\+I\+N/projet-\/rythmique/\+Projet-\/rythmique/\+Assets/\+Scripts/\hyperlink{_loop_8cs}{Loop.\+cs}\end{DoxyCompactItemize}

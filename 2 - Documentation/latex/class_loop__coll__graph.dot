@@ -1,0 +1,11 @@
+digraph "Loop"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Loop\n|+ loopTime\l+ sounds\l+ spheres\l+ Ratio\l+ LoopTime\l+ LoopDuration\l+ Accuracy\l+ Spheres\l- ratio\l- clipNumber\l- loopDuration\l- accuracy\l|+ Initialize()\l+ AddSound()\l+ playSound()\l+ adjustSound()\l+ addSpheres()\l+ updateLoopTime()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +anim" ,arrowhead="odiamond"];
+  Node3 [label="{Animation\n|+ cylinders\l+ CylinderGap\l+ Cylinders\l+ Size\l+ SizeY\l- container\l- MyColors\l- size\l- sizeY\l- cylinderGap\l- gap\l|+ Initialize()\l+ AddColor()\l+ drawLine()\l+ drawSphere()\l+ makeWhite()\l+ makeYellow()\l+ drawCylinder()\l+ animateCylinder()\l+ cameraMove()\l+ addCylinders()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_animation.html",tooltip="Cette classe implémente la partie graphique de l&#39;application. Elle permet d&#39;instancier des cylindres ..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+}

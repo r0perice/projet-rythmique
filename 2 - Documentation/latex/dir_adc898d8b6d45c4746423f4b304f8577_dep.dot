@@ -1,0 +1,13 @@
+digraph "/Users/robin/Google Drive/Travail/S9/PRI/projet rythmique github/projet-unity/projet-rythmique/Projet-rythmique" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fb4c4f66336c108cb3216927986aaf87 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="projet-rythmique" fontname="Helvetica", fontsize="10", URL="dir_fb4c4f66336c108cb3216927986aaf87.html"]
+  subgraph clusterdir_adc898d8b6d45c4746423f4b304f8577 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_adc898d8b6d45c4746423f4b304f8577.html"];
+    dir_adc898d8b6d45c4746423f4b304f8577 [shape=plaintext label="Projet-rythmique"];
+    dir_a56a97dd4ebbfdf93c2f14794f1313e9 [shape=box label="Assets" color="red" fillcolor="white" style="filled" URL="dir_a56a97dd4ebbfdf93c2f14794f1313e9.html"];
+  }
+  }
+}
